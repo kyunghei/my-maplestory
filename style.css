@@ -995,19 +995,13 @@ body {
 }
 
 footer {
-    background-color: rgba(3, 3, 3, 0.9);
+    background-color: rgba(3, 3, 3, 0.8);
     font-family: 'Nunito', sans-serif;
-    height: 100px;
-    padding: 5% 5%;
+    height: 80px;
+    padding: 3%;
     text-align: center;
     position: relative;
-}
-
-footer a:link,
-footer a:visited {
-    padding: 0 5%;
-    color: white;
-    text-decoration: none;
+    margin-top: 100px;
 
 }
 

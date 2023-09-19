@@ -1420,20 +1420,14 @@ body {
 
 
 footer {
-    background-color: rgba(3, 3, 3, 0.9);
+    background-color: rgba(3, 3, 3, 0.8);
     font-family: 'Nunito', sans-serif;
-    height: 100px;
-    padding: 5% 5%;
+    height: 80px;
+    padding: 3%;
     text-align: center;
     position: relative;
-    margin-top: 5%;
-}
+    margin-top: 100px;
 
-footer a:link,
-footer a:visited {
-    padding: 0 5%;
-    color: white;
-    text-decoration: none;
 }
 
 footer p {
@@ -1442,4 +1436,6 @@ footer p {
     bottom: 20px;
     transform: translate(-50%, -50%);
     margin: 0 auto;
+    color: white;
+
 }
