@@ -1,5 +1,6 @@
 var form = document.getElementById('class-quiz');
 
+
 form.addEventListener('submit', function (event) {
     // prevents the form from autosubmitting
     event.preventDefault()
@@ -27,6 +28,9 @@ form.addEventListener('submit', function (event) {
         }
     }
 
+    console.log(thief);
+    console.log(archer);
+    var maxNum = (Math.max(thief, archer, mage, warrior));
 
     if (thief == maxNum) {
         classResult = 'Thief';
@@ -41,19 +45,27 @@ form.addEventListener('submit', function (event) {
         classResult = 'Warrior';
         classMessage = 'You are a fearless hero, always ready to face danger head-on.'
     }
-    var maxNum = (Math.max(thief, archer, mage, warrior));
 
     // Add results to the pop up window
     var resultContent = document.getElementById("result-content");
     var result = document.createElement('p');
     result.id = "classResult";
     result.textContent = `You are destined to be a ${classResult}!`;
-    var resultMessage = document.createElement('p');
+    var resultMessage = document.createElement('span');
     resultMessage.id = "resultMessage";
     resultMessage.textContent = classMessage;
     resultContent.appendChild(result);
     resultContent.appendChild(resultMessage);
 
+    //Add respective image to pop up window
+    var resultImage = document.createElement('img');
+    resultImage.src = `images/class/${classResult}3.png`;
+    resultImage.id = "resultImg";
+    resultContent.appendChild(resultImage);
+
+    //reset form
+    var form = document.getElementById("class-quiz");
+    form.reset();
 })
 
 var closePopup = document.getElementById('close-box');
@@ -64,5 +76,5 @@ closePopup.addEventListener("click", function (event) {
     var resultContent = document.getElementById("result-content");
     resultContent.removeChild(document.getElementById('classResult'));
     resultContent.removeChild(document.getElementById('resultMessage'));
-
+    resultContent.removeChild(document.getElementById("resultImg"));
 })

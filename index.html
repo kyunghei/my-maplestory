@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Maplestory Page</title>
-    <link rel="icon" type="image/x-icon" href="C:\Users\Angela\PycharmProjects\maplestory_website\public\favicon.ico">
+    <link rel="icon" type="image/x-icon" href="\images\cloud\favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&family=Pangolin&display=swap"
         rel="stylesheet">
 
-    <link href="https://poji-css.afeld.me/poji.css" rel="stylesheet">
-    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -211,11 +209,11 @@
                         <ul>
                             <li>
                                 <label for="fname">Name:</label>
-                                <input type="text" id="fname" name="fname" required>
+                                <input type="text" id="fname" name="fname" autocomplete="off" required>
                             </li>
                             <li>
                                 <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="email" autocomplete="off" required>
 
                             </li>
                             <li>
@@ -324,25 +322,25 @@
                 </div>
                 <div id="contact-container">
                     <div class="contact-form">
-                        <form action="https://api.web3forms.com/submit" method="POST">
+                        <form id="submitForm" action="https://api.web3forms.com/submit" method="POST">
                             <input type="hidden" name="access_key" value="039d3d07-c3e0-466f-bb63-90b10b6c3893">
                             <ul>
                                 <li id="form-caption">Drop a message.</li>
                                 <li>
                                     <label for="fname">Your Name:</label>
-                                    <input type="text" id="fname" name="fname" required>
+                                    <input type="text" id="fname" name="fname" autocomplete="off" required>
                                 </li>
                                 <li>
                                     <label for="email">Your Email:</label>
-                                    <input type="email" id="email" name="email" required>
+                                    <input type="email" id="email" name="email" autocomplete="off" required>
 
                                 </li>
                                 <li>
-                                    <textarea id="msg" name="user_message" rows="10" placeholder="Your message.."
-                                        required></textarea>
+                                    <textarea id="msg" autocomplete="off" name="user_message" rows="10"
+                                        placeholder="Your message.." required></textarea>
                                 </li>
                                 <li>
-                                    <button>Send Message</button>
+                                    <button id="submitBtn">Send Message</button>
                                 </li>
                             </ul>
 
