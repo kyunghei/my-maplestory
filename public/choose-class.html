@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Page</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\Angela\PycharmProjects\maplestory_website\public\favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&family=Pangolin&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="class_style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="links" id="nav-brand" href="main_page.html">
+            M
+        </a>
+        <a class="links" href="main_page.html#about-page">About</a>
+        <div class="dropdown">
+            <a class="menu-btn" href="main_page.html#user-guide-page">Guide<i class="arrow down"></i></a>
+            <div class="menu-content">
+                <a class="hidden-link" href="create-character.html">Explore Looks</a>
+                <a class="hidden-link" href="choose-class.html">Explore Classes</a>
+                <a class="hidden-link" href="class_quiz.html">Take a Class Quiz</a>
+            </div>
+        </div>
+        <a class="links" href="main_page.html#community-page">Community</a>
+        <a class="links" href="main_page.html#contact-page">Contact</a>
+    </nav>
+    <main>
+        <section class="top-page" id="top-page">
+            <div class="bubble">
+
+                <h2>Choose a Class</h2>
+
+            </div>
+            <div class="caption">
+                In your Maple adventure, you can choose to be a tough warrior, a skilled archer, a sneaky rouge, or a
+                mystical magician, each with their own unique abilities.
+            </div>
+
+            <div id="jobs-container">
+                <a href="#warrior-page" class="classes" id="warrior">
+                    <p>Warrior</p>
+                    <img src="images\class\warrior.png" alt="warrior">
+                </a>
+                <a href="#archer-page" class="classes" id="archer">
+                    <p>Archer</p>
+                    <img src="images\class\archer.png" alt="archer">
+                </a>
+                <a href="#magician-page" class="classes" id="magician">
+                    <p>Magician</p>
+                    <img src="images\class\mage.png" alt="mage">
+                </a>
+                <a href="#thief-page" class="classes" id="thief">
+                    <p>Thief</p>
+                    <img src="images\class\thief.png" alt="rouge">
+                </a>
+                <a href="class_quiz.html" class="classes" id="class-quiz">
+                    <div><img src="images\pig.png" alt="fortune-pig"></div>
+                    <span>Talk to the fortune pig to find which class you are destined for..</span>
+                </a>
+            </div>
+
+        </section>
+        <section class="warrior-page" id="warrior-page">
+            <div class="bubble">
+                <h3>Warrior Class</h3>
+            </div>
+            <div class="caption">
+                Embody the role of a mighty frontline combatant, wielding massive swords and shields, ready to charge in
+                and deliver devastating blows.
+            </div>
+            <div class="container">
+                <div class="stats">
+                    <p><span>STATS</span></p>
+
+                    <div class="stats-container">
+                        <div class="stat-details">
+                            <span>Attack</span>
+                            <div class="bar" id="warrior-attack"></div>
+                        </div>
+                        <div class="stat-details">
+                            <span>Defense</span>
+                            <div class="bar" id="warrior-defense"></div>
+                        </div>
+                        <div class="stat-details">
+                            <span>Mobility</span>
+                            <div class="bar" id="warrior-mobility"></div>
+                        </div>
+                        <div class="stat-details">
+                            <span>Difficulty</span>
+                            <div class="bar" id="warrior-difficulty"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="key-attributes">
+                    <p><span>KEY ATTRIBUTES</span></p>
+
+                    <div class="attribute-container">
+                        <div class="attribute-details">
+                            <span>Primary Attribute:</span>
+                            <p class="sub-text"> Strength (STR)</p>
+                        </div>
+                        <div class="attribute-details">
+                            <span>Primary Weapon:</span>
+                            <p class="sub-text">
+                                Sword, Axe, Spear, Polearm
+                            </p>
+                        </div>
+                        <div class="attribute-details">
+                            <span>Hit Points (HP):</span>
+                            <p class="sub-text"> Very High</p>
+                        </div>
+                        <div class="attribute-details">
+                            <span>Mana Points (MP):</span>
+                            <p class="sub-text"> Low</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="warrior-img">
+                <div class="pro_cons">
+                    <span>Pros:</span>
+                    <ul>
+                        <li>Warriors are the tanks of MapleStory. They have high HP and defense, which makes them great
+                            for taking on tough enemies.</li>
+                        <li>They also deal massive damage, especially when it comes to melee attacks.</li>
+                        <li>Warriors have a simple and straightforward playstyle, which makes them easy for beginners to
+                            pick up.</li>
+                    </ul>
+                    <span>Cons:</span>
+                    <ul>
+                        <li>Warriors can be slow and lumbering, which makes them vulnerable to fast-moving enemies.</li>
+                        <li>They also lack range, which can make it difficult to take out enemies from a distance.</li>
+                        <li>Warriors can be a bit boring to play, since their skillset is limited compared to other
+                            classes.</li>
+                    </ul>
+                    <img src="images\class\warrior3.png" alt="">
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="archer-page" id="archer-page">
+            <div class="bubble">
+                <h3>Archer Class</h3>
+            </div>
+            <div class="caption">
+                Become a skilled bow-wielder, mastering the art of shooting arrows with accuracy and speed, allowing you
+                to take down enemies from a safe distance.
+                <br>
+            </div>
+
+            <div class="container">
+                <div class="stats">
+                    <p><span>STATS</span></p>
+
+                    <div class="stats-container">
+                        <div class="stat-details">
+                            <span>Attack</span>
+                            <div class="bar" id="archer-attack"></div>
+                        </div>
+                        <div class="stat-details">
+                            <span>Defense</span>
+                            <div class="bar" id="archer-defense"></div>
+                        </div>
+                        <div class="stat-details">
+                            <span>Mobility</span>
+                            <div class="bar" id="archer-mobility"></div>
+                        </div>
+                        <div class="stat-details">
+                            <span>Difficulty</span>
+                            <div class="bar" id="archer-difficulty"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="key-attributes">
+                    <p><span>KEY ATTRIBUTES</span></p>
+
+                    <div class="attribute-container">
+                        <div class="attribute-details">
+                            <span>Primary Attribute:</span>
+                            <p class="sub-text"> Dexterity (DEX)</p>
+                        </div>
+                        <div class="attribute-details">
+                            <span>Primary Weapon:</span>
+                            <p class="sub-text">
+                                Bow, Crossbow
+                            </p>
+                        </div>
+                        <div class="attribute-details">
+                            <span>Hit Points (HP):</span>
+                            <p class="sub-text"> Medium</p>
+                        </div>
+                        <div class="attribute-details">
+                            <span>Mana Points (MP):</span>
+                            <p class="sub-text"> Medium</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="archer-img">
+                <div class="pro_cons">
+                    <span>Pros:</span>
+                    <ul>
+                        <li>Archers are the ranged attackers of MapleStory. They have high accuracy and critical rate,
+                            which makes them great for taking out enemies from a distance.</li>
+                        <li>They have a variety of skills that allow them to shoot arrows in different directions and
+                            deal massive damage.</li>
+                        <li>Archers have a unique playstyle that involves managing their positioning and using their
+                            mobility to dodge attacks.</li>
+                    </ul>
+                    <span>Cons:</span>
+                    <ul>
+                        <li>Archers have low HP and defense, which makes them vulnerable to attacks.</li>
+                        <li>They can struggle in close combat, since their attacks are focused on dealing damage from
+                            afar.</li>
+                        <li>Archers can be a bit tricky to play for beginners, since their skills require more precision
+                            and timing than other classes.</li>
+                    </ul>
+                    <img src="images\class\archer2.png" alt="">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="magician-page" id="magician-page">
+            <div class="bubble">
+                <h3>Magician Class</h3>
+            </div>
+            <div class="caption">
+                Unleash magical mayhem as a magician, wielding powerful spells to defeat hordes of monsters
+                with spellbinding precision.
+            </div>
+
+            <div class="container">
+                <div class="stats">
+                    <p><span>STATS</span></p>
+
+                    <div class="stats-container">
+                        <div class="stat-details">
+                            <span>Attack</span>
+                            <div class="bar" id="magician-attack"></div>
+                        </div>
+                        <div class="stat-details">
+                            <span>Defense</span>
+                            <div class="bar" id="magician-defense"></div>
+                        </div>
+                        <div class="stat-details">
+                            <span>Mobility</span>
+                            <div class="bar" id="magician-mobility"></div>
+                        </div>
+                        <div class="stat-details">
+                            <span>Difficulty</span>
+                            <div class="bar" id="magician-difficulty"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="key-attributes">
+                    <p><span>KEY ATTRIBUTES</span></p>
+
+                    <div class="attribute-container">
+                        <div class="attribute-details">
+                            <span>Primary Attribute:</span>
+                            <p class="sub-text"> Intelligence (INT)</p>
+                        </div>
+                        <div class="attribute-details">
+                            <span>Primary Weapon:</span>
+                            <p class="sub-text">
+                                Wand, Staff
+                            </p>
+                        </div>
+                        <div class="attribute-details">
+                            <span>Hit Points (HP):</span>
+                            <p class="sub-text"> Low</p>
+                        </div>
+                        <div class="attribute-details">
+                            <span>Mana Points (MP):</span>
+                            <p class="sub-text"> High</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mage-img">
+                <div class="pro_cons">
+                    <span>Pros:</span>
+                    <ul>
+                        <li>Mages are the magic users of MapleStory. They have a wide range of spells and abilities,
+                            which makes them versatile in combat.</li>
+                        <li>They can deal high damage from a distance, which makes them great for taking out enemies
+                            before they can even get close.</li>
+                        <li>Mages have a unique playstyle that involves managing mana and cooldowns, which can be
+                            challenging but rewarding.</li>
+                    </ul>
+                    <span>Cons:</span>
+                    <ul>
+                        <li>Mages have low HP and defense, which makes them vulnerable to attacks.</li>
+                        <li>They can be tricky to play for beginners, since their spells require more strategy and
+                            planning than other classes.</li>
+                        <li>Mages can be reliant on consumables and gear to maintain their mana pool and damage output.
+                        </li>
+                    </ul>
+                    <img src="images\class\mage1.png" alt="">
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="thief-page" id="thief-page">
+            <div class="bubble">
+                <h3>Thief Class</h3>
+            </div>
+            <div class="caption">
+                Use stealthy skills and swift maneuvers to outsmart enemies, unleash devasting sneak attacks, and vanish
+                into the night.
+                <br>
+            </div>
+
+            <div class="container">
+                <div class="stats">
+                    <p><span>STATS</span></p>
+
+                    <div class="stats-container">
+                        <div class="stat-details">
+                            <span>Attack</span>
+                            <div class="bar" id="thief-attack"></div>
+                        </div>
+                        <div class="stat-details">
+                            <span>Defense</span>
+                            <div class="bar" id="thief-defense"></div>
+                        </div>
+                        <div class="stat-details">
+                            <span>Mobility</span>
+                            <div class="bar" id="thief-mobility"></div>
+                        </div>
+                        <div class="stat-details">
+                            <span>Difficulty</span>
+                            <div class="bar" id="thief-difficulty"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="key-attributes">
+                    <p><span>KEY ATTRIBUTES</span></p>
+
+                    <div class="attribute-container">
+                        <div class="attribute-details">
+                            <span>Primary Attribute:</span>
+                            <p class="sub-text"> Luck (LUK)</p>
+                        </div>
+                        <div class="attribute-details">
+                            <span>Primary Weapon:</span>
+                            <p class="sub-text">
+                                Dagger, Claw
+                            </p>
+                        </div>
+                        <div class="attribute-details">
+                            <span>Hit Points (HP):</span>
+                            <p class="sub-text">Medium</p>
+                        </div>
+                        <div class="attribute-details">
+                            <span>Mana Points (MP):</span>
+                            <p class="sub-text">Medium</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thief-img">
+                <div class="pro_cons">
+                    <span>Pros:</span>
+                    <ul>
+                        <li>Thieves are the stealthy assassins of MapleStory. They have high agility and dexterity,
+                            which makes them great for dodging attacks and dealing critical hits.</li>
+                        <li>They have a wide variety of skills that allow them to sneak around undetected, stun enemies,
+                            and deal massive damage.</li>
+                        <li>Thieves have a fast-paced and exciting playstyle that keeps players on their toes.</li>
+                    </ul>
+                    <span>Cons:</span>
+                    <ul>
+                        <li>Thieves have low HP and defense, which makes them vulnerable to attacks.</li>
+                        <li>They can be tricky to play for beginners, since their skills require more precision and
+                            timing than other classes.</li>
+                        <li>Thieves can struggle against enemies with high health, since their attacks are focused on
+                            dealing burst damage rather than sustained damage.
+                        </li>
+                    </ul>
+                    <img src="images\class\thief1.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+
+        <footer>
+            <a class="nav-end" href="#about-page">About</a>
+            <a class="nav-end" href="#user-guide-page">Guide</a>
+            <a class="nav-end" href="#community-page">Community</a>
+            <a class="nav-end" href="#">Vote</a>
+            <a class="nav-end" href="#contact-page">Contact</a>
+            <br>
+            <p>MapleBook &#169 2023</p>
+        </footer>
+
+
+
+</body>
+<script src="navbar.js"></script>
+
+</html>
