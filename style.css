@@ -230,7 +230,6 @@ body {
 }
 
 .top-message {
-    /* font-family: 'Nunito', sans-serif; */
     font-family: 'Pangolin', sans-serif;
     font-size: 23px;
     letter-spacing: 4px;
@@ -251,16 +250,10 @@ body {
 }
 
 .btn {
-
     font-size: 22px;
-
-
     font-family: 'Pangolin', sans-serif;
     color: rgba(0, 0, 0, .9);
     letter-spacing: 1px;
-
-
-
 }
 
 .btn:hover {
@@ -271,7 +264,6 @@ body {
 .top-page {
     height: 1500px;
     overflow: hidden;
-
 }
 
 /* bubble design for the headers */
@@ -308,13 +300,6 @@ body {
     font-size: 15px;
     line-height: 35px;
     font-family: 'Nunito', sans-serif;
-    letter-spacing: 0.7px;
-    /* margin: 0 10% 5% 10%; */
-    /* background-color: rgb(222, 222, 221); */
-    /* width: 1000px; */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center; */
     width: 70%;
     margin: 0 auto;
     margin-bottom: 1%;
@@ -328,10 +313,11 @@ body {
     -webkit-box-shadow: 10px 10px 5px 0px rgb(123, 122, 119);
     -moz-box-shadow: 10px 10px 5px 0px rgb(123, 122, 119);
     box-shadow: 10px 10px 5px 0px rgb(123, 122, 119);
-    padding: 25px;
+    padding: 30px;
     background-color: white;
-    margin: 1% 0 10% 0;
+    margin: 0 0 10% 0;
     text-align: center;
+    color: #000000df;
 
 }
 
@@ -353,9 +339,7 @@ body {
     overflow: hidden;
     background: linear-gradient(rgb(255, 255, 255), rgba(245, 241, 241, 0.3), rgb(255, 255, 255)), url("images/userguide_bg.png");
     background-size: contain;
-    /* text-align: center; */
-
-
+    padding-bottom: 150px;
 }
 
 
@@ -386,7 +370,6 @@ body {
 
 
 .steps p {
-    font-size: 16px;
     width: 100%;
 }
 
@@ -397,10 +380,9 @@ body {
     height: 400px;
     font-family: 'Nunito', sans-serif;
     font-size: 17px;
-    line-height: 50px;
+    line-height: 45px;
     position: relative;
     color: rgb(0, 0, 0, .9);
-    /* background-color: rgb(255, 255, 255, .8); */
     border-radius: 25px;
     overflow: hidden;
     padding: 25px 25px 50px 25px;
@@ -457,7 +439,6 @@ body {
 .play-now {
     text-align: center;
     padding-top: 50px;
-    margin-bottom: 5%;
 }
 
 .play-now span {
@@ -529,7 +510,6 @@ body {
     width: 37%;
     height: 400px;
     text-align: center;
-    /* background-color: rgb(255, 255, 255, .8); */
     background-color: white;
     margin: 0 25px;
     position: relative;
@@ -541,7 +521,6 @@ body {
 #social-connect p {
 
     text-align: center;
-    margin-bottom: 0;
     padding: 35px 0 0 0;
     font-family: 'Nunito', sans-serif;
     font-size: 30px;
@@ -555,7 +534,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     text-align: center;
-    padding: 35px 0 0 0;
+    padding: 25px 10px 0 10px;
     border-radius: 25px;
     font-weight: 400;
 }
@@ -653,16 +632,15 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     text-align: center;
-    padding: 35px 0 0 0;
+    padding-top: 25px;
     border-radius: 25px;
     font-weight: 400;
 }
 
 #news form {
     position: relative;
-    text-align: center;
     z-index: 1;
-
+    width: 80%;
 }
 
 #news ul {
@@ -688,7 +666,7 @@ body {
     border-radius: 25px;
     padding: 10px 0px 10px 10px;
     font-family: monospace, sans-serif;
-    width: 44%;
+    width: 50%;
     background-color: #fffffff6;
     outline: none;
 }
@@ -702,7 +680,9 @@ body {
     color: white;
     letter-spacing: 1px;
     font-weight: 400;
+    position: absolute;
     border: 1px solid white;
+    right: 105px;
 }
 
 #news button:hover {
@@ -713,10 +693,9 @@ body {
 }
 
 #news img {
-    opacity: .8;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 10px;
+    right: 10px;
     padding: 20px;
 
 }
@@ -733,7 +712,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 30px;
     margin-bottom: 0;
-    padding-top: 15px;
+    padding-top: 25px;
     font-weight: 900;
 }
 
@@ -799,20 +778,24 @@ body {
 
         font-style: italic;
         color: black;
+        font-size: 20px;
+        margin: 0 2%;
 
     }
 
     .card span {
         font-weight: 900;
         font-size: 50px;
-        color: rgb(0, 0, 0, .5)
+        color: rgb(0, 0, 0, .5);
     }
 
     .card b {
-        text-align: right;
         color: black;
         letter-spacing: 3px;
         font-weight: 400;
+        font-size: 18px;
+        padding-left: 50px;
+        display: block;
     }
 }
 
@@ -1013,4 +996,386 @@ footer p {
     margin: 0 auto;
     color: white;
 
+}
+
+
+@media (max-width: 1100px) {
+
+    /* nav bar */
+    .links,
+    .hidden-link,
+    .menu-btn {
+        font-size: 15px;
+    }
+
+    /* main page */
+    .main-area h2 {
+        font-size: 70px;
+    }
+
+    .top-message p,
+    .btn {
+        font-size: 17px;
+    }
+
+    #bubble {
+        height: 220px;
+        width: 75%;
+    }
+
+    /* headers */
+    .bubble h2 {
+        font-size: 35px;
+    }
+
+    /* about page */
+    .about {
+        line-height: 20px;
+        width: 85%;
+    }
+
+    .about-img img {
+        width: 50px;
+    }
+
+    /* user guide */
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .steps h3 {
+        font-size: 20px;
+        letter-spacing: 0px;
+        margin-bottom: 10px;
+    }
+
+    .steps h3>span {
+        font-size: 18px;
+        padding: 3px 10px;
+        margin-right: 5px;
+    }
+
+    #step-1,
+    #step-2,
+    #step-3 {
+        line-height: 25px;
+        height: 280px;
+        font-size: 14px;
+        height: 150px;
+        width: auto;
+        margin: 0 7.5% 2% 7.5%;
+        padding: 15px 15px 30px 15px;
+    }
+
+    #green-snail,
+    #blue-snail,
+    #red-snail {
+        width: 50px;
+    }
+
+    .steps a {
+        font-size: 14px;
+        position: absolute;
+        bottom: 5px;
+
+    }
+
+    .play-now {
+        padding-top: 20px;
+    }
+
+    .play-now span {
+        display: none;
+    }
+
+    .play-now button {
+
+        font-size: 20px;
+    }
+
+    /* community page */
+
+    #flex-container {
+        flex-direction: column;
+    }
+
+    #social-connect,
+    #news {
+        width: auto;
+        margin: 1% 7.5%;
+        height: 200px;
+    }
+
+    #social-connect p,
+    #news p {
+        padding-left: 20px;
+        padding-top: 0;
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    #social-connect span,
+    #news span {
+        font-size: 14px;
+        padding-top: 0;
+        padding-left: 20px;
+        text-align: left;
+        display: block;
+    }
+
+    #social1 {
+        transform: scale(1.3);
+    }
+
+    #social2 {
+        display: none;
+    }
+
+    .fa {
+        padding: 15px;
+        font-size: 28px;
+        width: 30px;
+    }
+
+    #news form {
+        text-align: right;
+        width: auto;
+    }
+
+    #news input {
+        height: 10px;
+        padding: 5px 0 5px 5px;
+        width: 300px;
+        margin: 0 40px 5px 0;
+    }
+
+    #news button {
+        font-size: 14px;
+        padding: 5px 10px;
+        margin: 0 40px 0 0;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    #card-section {
+        margin: 0 7.5%;
+    }
+
+    #news img {
+        display: none;
+    }
+
+    .subbubble h4 {
+        font-size: 25px;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
+    /* contact page */
+
+    .contact-form {
+        width: 400px;
+    }
+
+    .contact-form label {
+        font-size: 15px;
+    }
+
+    .contact-us input {
+        height: 15px;
+    }
+
+    .contact-us textarea {
+        width: 65%;
+    }
+
+    .contact-us button {
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width:1101px) and (max-width:1370px) {
+
+    /* landing page */
+    .main-area h2 {
+        font-size: 80px;
+    }
+
+    .top-message p {
+        font-size: 20px;
+    }
+
+    #bubble {
+        height: 250px;
+    }
+
+    /* about page */
+
+    .bubble h2 {
+        font-size: 45px;
+    }
+
+    .about_msg {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .about-img img {
+        width: 70px;
+    }
+
+    /* user guide page */
+
+    .steps h3 {
+        font-size: 22px;
+    }
+
+    .steps h3>span {
+        font-size: 22px;
+
+    }
+
+    #step-1,
+    #step-2,
+    #step-3 {
+        line-height: 35px;
+        height: 310px;
+        font-size: 14px;
+    }
+
+    .steps a {
+        font-size: 15px;
+    }
+
+    /* community page */
+    #social-connect {
+        height: 350px;
+    }
+
+    #social-connect p,
+    #news p {
+        margin-bottom: 20px;
+    }
+
+    #social-connect span,
+    #news span {
+        font-size: 15px;
+    }
+
+    #social1,
+    #social2 {
+        transform: scale(1.1);
+    }
+
+    #social1 {
+        right: 10px;
+        padding: 17px;
+    }
+
+    #social2 {
+        display: none;
+    }
+
+    .fa {
+        width: 25px;
+        font-size: 25px;
+        padding: 25px;
+    }
+
+    #news form {
+        width: 100%;
+    }
+
+    #news li {
+        font-size: 16px;
+    }
+
+    #news input {
+        height: 15px;
+    }
+
+    #news button {
+        font-size: 15px;
+        right: 70px;
+        position: relative;
+        right: 0;
+    }
+
+    #news img {
+        display: none;
+    }
+
+    .card p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1500px) {
+    #news img {
+        transform: scale(.9);
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    #news img {
+        padding: 5px;
+    }
+
+    #news button {
+        right: 84px;
+    }
+}
+
+@media (min-width:1371px) and (min-width:1730px) {
+
+    /* about page */
+    .about_msg {
+        font-size: 17px;
+        line-height: 40px;
+        padding: 40px;
+    }
+
+    .about-img img {
+        width: 90px;
+    }
+
+    /* user guide page */
+    .steps h3 {
+        font-size: 33px;
+    }
+
+    .steps h3>span {
+        font-size: 30px;
+    }
+
+    #step-1,
+    #step-2,
+    #step-3 {
+        font-size: 17px;
+    }
+
+    /* community page */
+    #social-connect p,
+    #news p {
+        font-size: 35px;
+    }
+
+    #social-connect span,
+    #news span {
+        font-size: 20px;
+    }
+
+    #social1,
+    #social2 {
+        transform: scale(1.5);
+    }
 }
