@@ -27,9 +27,10 @@ html {
 }
 
 body {
-    background-image: url("images/landing_bg.jpg");
+    margin: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.973)), url("images/landing_bg.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     -webkit-animation: slidein 15s;
     animation: slidein 15s;
 
@@ -41,23 +42,11 @@ body {
 
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
-    margin: 0;
-
 }
 
-@keyframes slidein {
-    from {
-        background-position: top;
-        background-size: 2050px;
-    }
-
-    to {
-        background-position: -160px 0px;
-        background-size: 2070px;
-    }
-
+.divider {
+    height: 70px;
 }
-
 
 /* default nav bar */
 .navbar {
@@ -264,6 +253,21 @@ body {
 .top-page {
     height: 1500px;
     overflow: hidden;
+
+
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 2050px;
+    }
+
+    to {
+        background-position: -160px 0px;
+        background-size: 2070px;
+    }
+
 }
 
 /* bubble design for the headers */
@@ -488,7 +492,7 @@ body {
 }
 
 
-#community-page {
+.community-page {
     height: auto;
     /* text-align: center; */
     background: linear-gradient(rgb(255, 255, 255), rgba(245, 241, 241, 0.4), rgb(255, 255, 255)), url("images/community_bg.png");
@@ -828,18 +832,15 @@ body {
     height: 12px;
 }
 
-#contact-page {
+.contact-page {
     height: auto;
     overflow: hidden;
     position: relative;
-    padding-top: 150px;
 
 }
 
 
 #contact-container {
-    display: flex;
-    justify-content: center;
     margin-top: 3%;
     padding-bottom: 80px;
 }
@@ -854,10 +855,7 @@ body {
 
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 1%;
-    width: 40%;
+    margin: 0 10%;
     text-align: center;
 
 }
@@ -998,60 +996,87 @@ footer p {
 
 }
 
+@media (min-width: 320px) {
 
-@media (max-width: 1100px) {
-
-    /* nav bar */
-    .links,
-    .hidden-link,
-    .menu-btn {
-        font-size: 15px;
-    }
-
-    /* main page */
-    .main-area h2 {
-        font-size: 70px;
-    }
-
-    .top-message p,
-    .btn {
-        font-size: 17px;
-    }
-
+    /* landing page */
     #bubble {
-        height: 220px;
-        width: 75%;
+        width: 90%;
+        height: 100px;
     }
 
-    /* headers */
-    .bubble h2 {
-        font-size: 35px;
+    #bubble:before {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -20px;
+        right: auto;
+        top: 30px;
+        bottom: auto;
+        border: 10px solid;
+        border-color: rgb(255, 255, 255, .6) rgb(255, 255, 255, .6)transparent transparent;
+    }
+
+    .top-page {
+        height: 1600px;
+    }
+
+    .main-area h2 {
+        font-size: 34px;
+        top: 20px;
+    }
+
+    .top-message {
+        font-size: 12px;
+        top: 5px;
+        letter-spacing: .5px;
+    }
+
+    .btn {
+        font-size: 12px;
     }
 
     /* about page */
-    .about {
-        line-height: 20px;
-        width: 85%;
+    .bubble {
+        margin-left: 20px;
     }
 
-    .about-img img {
-        width: 50px;
+    .bubble h2 {
+        font-size: 25px;
+    }
+
+    .about {
+        width: 90%;
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .about img {
+        width: 35px;
+    }
+
+    .about_msg {
+        padding: 15px;
     }
 
     /* user guide */
+
+    .user-guide-page {
+        padding-bottom: 30px;
+    }
 
     .steps {
         flex-direction: column;
     }
 
     .steps h3 {
-        font-size: 20px;
+        font-size: 15px;
         letter-spacing: 0px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .steps h3>span {
-        font-size: 18px;
+        font-size: 15px;
         padding: 3px 10px;
         margin-right: 5px;
     }
@@ -1059,12 +1084,11 @@ footer p {
     #step-1,
     #step-2,
     #step-3 {
-        line-height: 25px;
-        height: 280px;
-        font-size: 14px;
-        height: 150px;
+        line-height: 15px;
+        font-size: 10px;
+        height: 140px;
         width: auto;
-        margin: 0 7.5% 2% 7.5%;
+        margin: 0 5% 3% 5%;
         padding: 15px 15px 30px 15px;
     }
 
@@ -1072,17 +1096,18 @@ footer p {
     #blue-snail,
     #red-snail {
         width: 50px;
+        padding: 10px;
     }
 
     .steps a {
-        font-size: 14px;
+        font-size: 10px;
         position: absolute;
         bottom: 5px;
-
+        padding: 5px 10px;
     }
 
     .play-now {
-        padding-top: 20px;
+        padding-top: 5px;
     }
 
     .play-now span {
@@ -1090,8 +1115,9 @@ footer p {
     }
 
     .play-now button {
-
-        font-size: 20px;
+        padding: 15px 50px;
+        font-size: 25px;
+        top: 0;
     }
 
     /* community page */
@@ -1103,31 +1129,33 @@ footer p {
     #social-connect,
     #news {
         width: auto;
-        margin: 1% 7.5%;
-        height: 200px;
+        margin: 0 5% 3% 5%;
+        height: 140px;
+        padding: 15px 15px 30px 15px;
     }
 
     #social-connect p,
     #news p {
-        padding-left: 20px;
+        padding-left: 10px;
+        margin: 0;
         padding-top: 0;
-        font-size: 25px;
-        margin-bottom: 20px;
+        font-size: 17px;
+        letter-spacing: 0;
         text-align: left;
-        margin-bottom: 10px;
     }
 
     #social-connect span,
     #news span {
-        font-size: 14px;
+        font-size: 10px;
         padding-top: 0;
-        padding-left: 20px;
+        padding-left: 10px;
         text-align: left;
         display: block;
     }
 
     #social1 {
-        transform: scale(1.3);
+        transform: scale(.8);
+        padding: 0px;
     }
 
     #social2 {
@@ -1136,37 +1164,410 @@ footer p {
 
     .fa {
         padding: 15px;
-        font-size: 28px;
-        width: 30px;
+        font-size: 20px;
+        width: 20px;
+        border-radius: 25px;
+        margin: 10px 5px;
     }
 
     #news form {
-        text-align: right;
+        text-align: center;
         width: auto;
+    }
+
+    #news label {
+        font-size: 12px;
     }
 
     #news input {
         height: 10px;
         padding: 5px 0 5px 5px;
-        width: 300px;
-        margin: 0 40px 5px 0;
+        margin: 0 0 5px 0;
     }
 
     #news button {
-        font-size: 14px;
+        font-size: 10px;
         padding: 5px 10px;
-        margin: 0 40px 0 0;
+        margin: 10px 0 0 0;
         position: relative;
         left: 0;
         right: 0;
     }
 
     #card-section {
-        margin: 0 7.5%;
+        margin: 0 5%;
     }
 
     #news img {
         display: none;
+    }
+
+    .subbubble h4 {
+        font-size: 20px;
+        margin-top: 0;
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    .card p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .owl-carousel {
+
+        .card {
+            height: 100px;
+            padding: 20px;
+        }
+
+        #card1,
+        #card2,
+        #card3,
+        #card4,
+        #card5,
+        #card6 {
+            background: none;
+        }
+
+        .card span {
+            font-size: 35px;
+        }
+
+    }
+
+    .owl-dot:hover,
+    .owl-dot.active {
+        border: 1px solid black !important;
+    }
+
+    /* contact page */
+
+    #contact-page {
+        padding-top: 30px;
+    }
+
+    #contact-container {
+        padding-bottom: 30px;
+    }
+
+    .contact-form {
+        margin: 0 5%;
+    }
+
+    #form-caption {
+        font-size: 15px;
+    }
+
+    .contact-form label {
+        font-size: 12px;
+    }
+
+    .contact-us li {
+        padding: 0;
+    }
+
+    .contact-us input {
+        height: 10px;
+    }
+
+    .contact-us textarea {
+        width: 65%;
+    }
+
+    .contact-us button {
+        font-size: 10px;
+    }
+
+    footer {
+        margin-top: 10px;
+    }
+
+    footer p {
+        left: none;
+        font-size: 10px;
+    }
+
+
+}
+
+@media (min-width: 480px) {
+
+    /* landing page */
+    #bubble {
+        width: 80%;
+        height: 100px;
+    }
+
+    #bubble:before {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -32px;
+        right: auto;
+        top: 30px;
+        bottom: auto;
+        border: 16px solid;
+        border-color: rgb(255, 255, 255, .6) rgb(255, 255, 255, .6)transparent transparent;
+    }
+
+    .top-page {
+        height: 1600px;
+    }
+
+    .main-area h2 {
+        font-size: 38px;
+        top: 15px;
+    }
+
+    .top-message {
+        font-size: 15px;
+        letter-spacing: .5px;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    /* about page */
+
+    .bubble h2 {
+        font-size: 30px;
+    }
+
+    .about {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .about img {
+        width: 45px;
+    }
+
+    .about_msg {
+        padding: 20px;
+    }
+
+
+    /* user guide */
+
+    .steps h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .steps h3>span {
+        font-size: 20px;
+    }
+
+    #step-1,
+    #step-2,
+    #step-3 {
+        line-height: 18px;
+        font-size: 13px;
+        height: 150px;
+    }
+
+    .steps a {
+        font-size: 13px;
+    }
+
+    /* community page */
+
+    #social-connect,
+    #news {
+        height: 150px;
+    }
+
+    #social-connect p,
+    #news p {
+        font-size: 22px;
+    }
+
+    #social-connect span,
+    #news span {
+        font-size: 13px;
+    }
+
+    #social1 {
+        transform: scale(1);
+    }
+
+    .fa {
+        padding: 15px;
+        font-size: 23px;
+        width: 25px;
+        margin: 15px 10px;
+    }
+
+    #news label {
+        font-size: 13px;
+    }
+
+    #news input {
+        height: 13px;
+    }
+
+    #news button {
+        font-size: 13px;
+    }
+
+    #card-section {
+        margin: 0 5%;
+    }
+
+    #news img {
+        display: none;
+    }
+
+    .subbubble h4 {
+        font-size: 22px;
+    }
+
+    .card p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .owl-carousel {
+
+        .card {
+            height: 150px;
+        }
+    }
+
+    /* contact page */
+
+
+    #form-caption {
+        font-size: 20px;
+    }
+
+    .contact-form label {
+        font-size: 13px;
+    }
+
+    .contact-us input {
+        height: 13px;
+    }
+
+    .contact-us button {
+        font-size: 13px;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    /* landing page */
+    #bubble {
+        width: 80%;
+        height: 140px;
+    }
+
+    #bubble:before {
+        left: -40px;
+        border: 20px solid;
+        border-color: rgb(255, 255, 255, .6) rgb(255, 255, 255, .6)transparent transparent;
+    }
+
+    .main-area h2 {
+        font-size: 50px;
+        top: 25px;
+    }
+
+    .top-message {
+        font-size: 19px;
+        letter-spacing: .5px;
+        margin-top: 12px;
+
+    }
+
+    .btn {
+        font-size: 19px;
+    }
+
+    /* about page */
+
+    .bubble h2 {
+        font-size: 35px;
+    }
+
+    .about {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .about img {
+        width: 55px;
+    }
+
+    .about_msg {
+        padding: 25px;
+    }
+
+    /* user guide */
+
+    .steps h3 {
+        font-size: 25px;
+    }
+
+    .steps h3>span {
+        font-size: 20px;
+    }
+
+    #step-1,
+    #step-2,
+    #step-3 {
+        line-height: 22px;
+        font-size: 15px;
+        height: 180px;
+    }
+
+    .steps a {
+        font-size: 15px;
+    }
+
+    /* community page */
+
+    #social-connect,
+    #news {
+        height: 180px;
+    }
+
+    #social-connect p,
+    #news p {
+        font-size: 25px;
+    }
+
+    #social-connect span,
+    #news span {
+        font-size: 15px;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 25px;
+        width: 30px;
+        margin: 23px 10px;
+    }
+
+    #news label {
+        font-size: 15px;
+    }
+
+    #news input {
+        height: 15px;
+    }
+
+    #news li {
+        margin: 5px 0;
+    }
+
+    #news button {
+        font-size: 15px;
     }
 
     .subbubble h4 {
@@ -1175,12 +1576,22 @@ footer p {
 
     .card p {
         font-size: 15px;
+        line-height: 25px;
     }
+
+    .owl-carousel {
+
+        .card {
+            height: 170px;
+        }
+    }
+
 
     /* contact page */
 
-    .contact-form {
-        width: 400px;
+
+    #form-caption {
+        font-size: 25px;
     }
 
     .contact-form label {
@@ -1191,29 +1602,415 @@ footer p {
         height: 15px;
     }
 
-    .contact-us textarea {
-        width: 65%;
+    .contact-us button {
+        font-size: 15px;
     }
 
-    .contact-us button {
+
+    footer p {
         font-size: 15px;
     }
 
 }
 
-@media (min-width:1101px) and (max-width:1370px) {
+@media (min-width: 801px) {
 
     /* landing page */
-    .main-area h2 {
-        font-size: 80px;
+    #bubble {
+        width: 75%;
+        height: 140px;
     }
 
-    .top-message p {
+    #bubble:before {
+        left: -40px;
+        border: 20px solid;
+        border-color: rgb(255, 255, 255, .6) rgb(255, 255, 255, .6)transparent transparent;
+    }
+
+    .main-area h2 {
+        font-size: 55px;
+        top: 23px;
+    }
+
+    .top-message {
         font-size: 20px;
     }
 
+    .btn {
+        font-size: 20px;
+    }
+
+    /* about page */
+
+    .bubble h2 {
+        font-size: 40px;
+    }
+
+    .about {
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    .about img {
+        width: 65px;
+    }
+
+    /* user guide */
+
+    .steps h3 {
+        font-size: 26px;
+    }
+
+    .steps h3>span {
+        font-size: 25px;
+        padding: 5px 15px;
+    }
+
+    #step-1,
+    #step-2,
+    #step-3 {
+        line-height: 27px;
+        font-size: 16px;
+        height: 180px;
+    }
+
+    .steps a {
+        font-size: 16px;
+    }
+
+    /* community page */
+
+    #social-connect,
+    #news {
+        height: 180px;
+    }
+
+    #social-connect p,
+    #news p {
+        font-size: 27px;
+    }
+
+    #social-connect span,
+    #news span {
+        font-size: 16px;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 35px;
+        width: 40px;
+        margin: 23px 10px;
+    }
+
+    #social1 {
+        transform: scale(1.4);
+        padding: 20px;
+    }
+
+    #news label {
+        font-size: 16px;
+    }
+
+    #news input {
+        height: 16px;
+    }
+
+    #news li {
+        margin: 5px 0;
+    }
+
+    #news button {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .subbubble h4 {
+        font-size: 27px;
+    }
+
+    .card p {
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    .owl-carousel {
+
+        .card {
+            height: 180px;
+        }
+
+        #card1 {
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk1.png")no-repeat 100%100%;
+            background-size: 200px 200px;
+
+        }
+
+        #card2 {
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk2.png")no-repeat 100%100%;
+            background-size: 200px 200px;
+        }
+
+        #card3 {
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk3.png")no-repeat 100%100%;
+            background-size: 200px 200px;
+
+        }
+
+        #card4 {
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk4.png")no-repeat 100%100%;
+            background-size: 200px 200px;
+        }
+
+        #card5 {
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk5.png")no-repeat 100%100%;
+            background-size: 200px 200px;
+
+        }
+
+        #card6 {
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk6.png")no-repeat 100%100%;
+            background-size: 200px 200px;
+
+        }
+
+    }
+
+    /* contact page */
+
+
+    #form-caption {
+        font-size: 27px;
+    }
+
+    .contact-form label {
+        font-size: 16px;
+    }
+
+    .contact-us input {
+        height: 16px;
+    }
+
+    .contact-us button {
+        font-size: 16px;
+    }
+
+    .contact-us li {
+        padding: 13px 0;
+    }
+
+
+    footer p {
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    /* landing page */
     #bubble {
-        height: 250px;
+        width: 60%;
+        height: 150px;
+    }
+
+    #bubble:before {
+        left: -50px;
+        border: 25px solid;
+        border-color: rgb(255, 255, 255, .6) rgb(255, 255, 255, .6)transparent transparent;
+    }
+
+    .main-area h2 {
+        font-size: 60px;
+        top: 18px;
+    }
+
+    .bubble {
+        margin-left: 5%;
+        ;
+    }
+
+    /* user guide */
+
+    .steps {
+        flex-direction: row;
+        margin: 0 5%;
+    }
+
+    .steps h3 {
+        font-size: 25px;
+    }
+
+    .steps h3>span {
+        font-size: 25px;
+        padding: 5px 15px;
+    }
+
+    #step-1,
+    #step-2,
+    #step-3 {
+        line-height: 30px;
+        font-size: 16px;
+        height: 350px;
+        width: 40%;
+        margin: 0;
+    }
+
+    #step-2 {
+        margin: 0 1%;
+    }
+
+    #green-snail,
+    #blue-snail,
+    #red-snail {
+        width: 25%;
+    }
+
+    .steps a {
+        font-size: 16px;
+    }
+
+    /* community page */
+
+    #flex-container {
+        flex-direction: row;
+        margin: 0 5%;
+    }
+
+    #social-connect,
+    #news {
+        height: 280px;
+        margin: 10px;
+        width: 50%;
+    }
+
+    #social-connect p,
+    #news p {
+        font-size: 27px;
+    }
+
+    #social-connect span,
+    #news span {
+        font-size: 16px;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 35px;
+        width: 40px;
+        margin: 23px 10px;
+    }
+
+    #social1 {
+        transform: scale(1.4);
+        padding: 20px;
+    }
+
+    #social2 {
+        position: absolute;
+        left: 15px;
+        bottom: 10px;
+        padding: 25px;
+        transform: scale(1.3);
+        display: inline;
+        top: 180px;
+    }
+
+    #news label {
+        font-size: 16px;
+    }
+
+    #news input {
+        height: 16px;
+    }
+
+    #news li {
+        margin: 15px 5px;
+        text-align: left;
+    }
+
+    #news button {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    #news img {
+        display: inline;
+        padding: 5px;
+        bottom: 5px;
+        right: 5px;
+        transform: scale(.9)
+    }
+
+    .subbubble h4 {
+        font-size: 27px;
+    }
+
+    .card p {
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    .owl-carousel {
+
+        .card {
+            height: 180px;
+        }
+
+        #card1 {
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk1.png")no-repeat 100%100%;
+            background-size: 200px 200px;
+
+        }
+
+        #card2 {
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk2.png")no-repeat 100%100%;
+            background-size: 200px 200px;
+        }
+
+        #card3 {
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk3.png")no-repeat 100%100%;
+            background-size: 200px 200px;
+
+        }
+
+        #card4 {
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk4.png")no-repeat 100%100%;
+            background-size: 200px 200px;
+        }
+
+        #card5 {
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk5.png")no-repeat 100%100%;
+            background-size: 200px 200px;
+
+        }
+
+        #card6 {
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk6.png")no-repeat 100%100%;
+            background-size: 200px 200px;
+
+        }
+
+    }
+
+}
+
+@media (min-width:1281px) {
+
+    /* landing page */
+    #bubble {
+        width: 55%;
+        height: 200px;
+    }
+
+    #bubble:before {
+        left: -60px;
+        border: 30px solid;
+        border-color: rgb(255, 255, 255, .6) rgb(255, 255, 255, .6)transparent transparent;
+    }
+
+    .main-area h2 {
+        font-size: 65px;
+        top: 30px;
     }
 
     /* about page */
@@ -1222,148 +2019,167 @@ footer p {
         font-size: 45px;
     }
 
+    .top-message {
+        margin-top: 25px;
+    }
+
+    .about {
+        line-height: 45px;
+        width: 75%;
+    }
+
+    .about img {
+        width: 75px;
+    }
+
     .about_msg {
-        font-size: 13px;
-        line-height: 25px;
+        padding: 35px;
     }
 
-    .about-img img {
-        width: 70px;
-    }
+    /* user guide */
 
-    /* user guide page */
-
-    .steps h3 {
-        font-size: 22px;
-    }
-
-    .steps h3>span {
-        font-size: 22px;
-
+    .steps {
+        flex-direction: row;
+        margin: 0 10%;
     }
 
     #step-1,
     #step-2,
     #step-3 {
         line-height: 35px;
-        height: 310px;
-        font-size: 14px;
+    }
+
+    #step-2 {
+        margin: 0 2%;
     }
 
     .steps a {
-        font-size: 15px;
+        padding: 5px 25px;
+    }
+
+    #green-snail,
+    #blue-snail,
+    #red-snail {
+        width: 20%;
+    }
+
+    .play-now {
+        padding-top: 35px;
     }
 
     /* community page */
-    #social-connect {
-        height: 350px;
+
+    #flex-container {
+        margin: 0 10%;
+    }
+
+    #social-connect,
+    #news {
+        height: 280px;
+        margin: 10px;
+        width: 50%;
     }
 
     #social-connect p,
     #news p {
-        margin-bottom: 20px;
+        font-size: 30px;
+        padding: 15px 10px;
     }
 
-    #social-connect span,
-    #news span {
-        font-size: 15px;
-    }
 
-    #social1,
-    #social2 {
-        transform: scale(1.1);
-    }
-
-    #social1 {
-        right: 10px;
-        padding: 17px;
-    }
-
-    #social2 {
-        display: none;
-    }
-
-    .fa {
-        width: 25px;
-        font-size: 25px;
-        padding: 25px;
-    }
-
-    #news form {
-        width: 100%;
-    }
-
-    #news li {
-        font-size: 16px;
+    #news label {
+        font-size: 18px;
     }
 
     #news input {
-        height: 15px;
+        height: 18px;
+    }
+
+    #news li {
+        margin: 20px 5px;
+        text-align: left;
     }
 
     #news button {
-        font-size: 15px;
-        right: 70px;
-        position: relative;
-        right: 0;
+        font-size: 16px;
+        margin-top: 0;
+        padding: 10px 25px;
     }
 
     #news img {
-        display: none;
+        transform: scale(1);
     }
 
-    .card p {
-        font-size: 17px;
-    }
-}
-
-@media (max-width: 1500px) {
-    #news img {
-        transform: scale(.9);
-        bottom: 0;
-        right: 0;
-    }
-}
-
-@media (max-width: 1600px) {
-    #news img {
-        padding: 5px;
-    }
-
-    #news button {
-        right: 84px;
-    }
-}
-
-@media (min-width:1371px) and (min-width:1730px) {
-
-    /* about page */
-    .about_msg {
-        font-size: 17px;
-        line-height: 40px;
-        padding: 40px;
-    }
-
-    .about-img img {
-        width: 90px;
-    }
-
-    /* user guide page */
-    .steps h3 {
-        font-size: 33px;
-    }
-
-    .steps h3>span {
+    .subbubble h4 {
         font-size: 30px;
     }
+
+    #card-section {
+        margin: 0 10%;
+    }
+
+    .owl-carousel {
+
+        .card {
+            height: 160px;
+        }
+
+        .card span {
+            font-size: 55px;
+        }
+    }
+
+    /* contact page */
+
+
+
+    #contact-container {
+        padding-bottom: 70px;
+    }
+
+    .contact-form {
+        margin: 0 30%;
+    }
+
+    #form-caption {
+        font-size: 22px;
+    }
+
+    .contact-form label {
+        font-size: 18px;
+    }
+
+
+    .contact-us input {
+        height: 18px;
+    }
+
+    .contact-us textarea {
+        width: 65%;
+    }
+
+    .contact-us button {
+        font-size: 18px;
+    }
+
+
+}
+
+@media (min-width: 1500px) {
+    /* user guide */
 
     #step-1,
     #step-2,
     #step-3 {
+        line-height: 40px;
         font-size: 17px;
+
     }
 
     /* community page */
+
+
+
     #social-connect p,
     #news p {
         font-size: 35px;
@@ -1371,11 +2187,37 @@ footer p {
 
     #social-connect span,
     #news span {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    #social1,
-    #social2 {
-        transform: scale(1.5);
+    #news label {
+        font-size: 18px;
     }
+
+    #news input {
+        height: 18px;
+    }
+
+
+    #news img {
+        transform: scale(1.1);
+        padding: 15px;
+    }
+
+    /* contact page */
+
+
+
+    #contact-container {
+        padding-bottom: 100px;
+    }
+
+    .contact-form {
+        margin: 0 30%;
+    }
+
+    #form-caption {
+        font-size: 30px;
+    }
+
 }
