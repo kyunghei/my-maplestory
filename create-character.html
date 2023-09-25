@@ -98,16 +98,35 @@
                 From sun-kissed glows to outrageous shades, customize your character's look and steal the spotlight in
                 the Maple World.
             </div>
+            <span class="chevron left"></span>
             <div id="skin-container">
-                <div class="skin-type" id="pale-pink">Pale Pink</div>
-                <div class="skin-type" id="pale">Pale</div>
-                <div class="skin-type" id="light">Light</div>
-                <div class="skin-type" id="clay">Clay</div>
-                <div class="skin-type" id="tanned">Tanned</div>
-                <div class="skin-type" id="dark">Dark</div>
-                <div class="skin-type" id="ashen">Ashen</div>
-                <div class="skin-type" id="green">Green</div>
+                <div class="skin-type" id="pale-pink">
+                    <p class="hidden">Pale Pink</p>
+                </div>
+                <div class="skin-type" id="pale">
+                    <p class="hidden">Pale</p>
+                </div>
+                <div class="skin-type" id="light">
+                    <p class="hidden">Light</p>
+                </div>
+                <div class="skin-type" id="clay">
+                    <p class="hidden">Clay</p>
+                </div>
+                <div class="skin-type" id="tanned">
+                    <p class="hidden">Tanned</p>
+                </div>
+                <div class="skin-type" id="dark">
+                    <p class="hidden">Dark</p>
+                </div>
+                <div class="skin-type" id="ashen">
+                    <p class="hidden">Ashen</p>
+                </div>
+                <div class="skin-type" id="green">
+                    <p class="hidden">Green</p>
+                </div>
             </div>
+            <span class="chevron top"></span>
+
 
 
         </section>
@@ -123,6 +142,7 @@
                 <span>(only few from the hundred of options shown)</span>
             </div>
             <div class="color-container">
+
                 <div class="color" id="black-eyes">
                     <p class="hidden">black</p>
                 </div>
@@ -333,15 +353,15 @@
                 <div class="style" id="overall">
                     <p class="hidden">overall</p>
                 </div>
-                <div class="color" id="shoe">
+                <div class="style" id="shoe">
                     <p class="hidden">shoe</p>
                 </div>
-                <div class="color" id="cape">
+                <div class="style" id="cape">
                     <p class="hidden">cape</p>
                 </div>
             </div>
 
-            <div class="gender-container">
+            <div class="gender-container" id="outfit-container">
 
                 <div class="outfit-container" id="hats">
                     <h2>Popular Hat Options</h2>
@@ -419,7 +439,7 @@
                         <p class="hidden">brown casual look</p>
                     </div>
                     <div class="outfit" id="princess-korean-traditional-costume">
-                        <p class="hidden">pincess korean traditional costume</p>
+                        <p class="hidden">korean traditional dress</p>
                     </div>
                     <div class="outfit" id="wedding-dress">
                         <p class="hidden">wedding dress</p>
@@ -489,14 +509,13 @@
 </body>
 <script src="navbar.js"></script>
 <script src="create-char.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
     integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
     integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 <script type="text/javascript">
     $(".drag").draggable({ containment: "parent" });
 </script>

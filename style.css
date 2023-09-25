@@ -1669,9 +1669,9 @@ footer p {
     #step-1,
     #step-2,
     #step-3 {
-        line-height: 27px;
+        line-height: 28px;
         font-size: 16px;
-        height: 180px;
+        height: 200px;
     }
 
     .steps a {
