@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="character_style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -99,7 +106,7 @@
                 the Maple World.
             </div>
             <span class="chevron left"></span>
-            <div id="skin-container">
+            <div id="skin-container" class="owl-carousel skin owl-theme">
                 <div class="skin-type" id="pale-pink">
                     <p class="hidden">Pale Pink</p>
                 </div>
@@ -141,7 +148,7 @@
                 <br>
                 <span>(only few from the hundred of options shown)</span>
             </div>
-            <div class="color-container">
+            <div id="color-container" class="owl-carousel color owl-theme">
 
                 <div class="color" id="black-eyes">
                     <p class="hidden">black</p>
@@ -253,8 +260,8 @@
                 <br>
                 <span>(only few from the hundred of options shown)</span>
             </div>
-            <div class="color-container">
-                <div class="color" id="black-hair">
+            <div id="color-container" class="owl-carousel color owl-theme">
+                <div class=" color" id="black-hair">
                     <p class="hidden">black</p>
                 </div>
                 <div class="color" id="blue-hair">
@@ -340,7 +347,7 @@
                 <br>
                 <span>(only few from the hundred of options shown)</span>
             </div>
-            <div class="style-container">
+            <div id="style-container" class="owl-carousel color owl-theme">
                 <div class="style" id="hat">
                     <p class="hidden">hat</p>
                 </div>
@@ -520,5 +527,89 @@
     $(".drag").draggable({ containment: "parent" });
 </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    var owl = $('.owl-carousel.skin');
+
+    owl.owlCarousel({
+        loop: true,
+        nav: true,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 2
+            },
+
+            400: {
+                items: 2
+            },
+
+            500: {
+                items: 3
+            },
+            600: {
+                items: 3
+            },
+            960: {
+                items: 4
+            },
+
+            1000: {
+                items: 5
+            },
+            1200: {
+                items: 6
+            }
+        }
+    });
+    owl.on('mousewheel', '.owl-stage', function (e) {
+        if (e.deltaY > 0) {
+            owl.trigger('next.owl');
+        } else {
+            owl.trigger('prev.owl');
+        }
+        e.preventDefault();
+    });
+
+    var owl_color = $('.owl-carousel.color');
+    owl_color.owlCarousel({
+        loop: true,
+        nav: true,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 3
+            },
+
+            400: {
+                items: 3
+            },
+            600: {
+                items: 4
+            },
+            800: {
+                items: 5
+            },
+            960: {
+                items: 6
+            },
+            1200: {
+                items: 7
+            }
+        }
+    });
+    owl_color.on('mousewheel', '.owl-stage', function (e) {
+        if (e.deltaY > 0) {
+            owl_color.trigger('next.owl');
+        } else {
+            owl_color.trigger('prev.owl');
+        }
+        e.preventDefault();
+    });
+
+
+</script>
 
 </html>

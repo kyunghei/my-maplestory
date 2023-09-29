@@ -4,18 +4,25 @@
 }
 
 *::-webkit-scrollbar:horizontal {
-    height: 5px;
+    height: 17px;
 }
 
 *::-webkit-scrollbar-track {
-    background: rgb(220, 219, 219);
+    background: rgb(255, 255, 255);
 
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(230, 229, 229);
     height: 5px;
-    border: 1px solid rgb(180, 180, 180);
+    cursor: pointer;
+    border: 6px solid transparent;
+    border-radius: 8px;
+    background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(202, 201, 201);
 }
 
 html {
@@ -512,7 +519,7 @@ body {
     color: red;
 }
 
-.color-container {
+#color-container {
     display: flex;
     justify-content: center;
     padding-top: 3%;
@@ -1007,7 +1014,7 @@ body {
     visibility: visible;
 }
 
-.style-container {
+#style-container {
     display: flex;
     justify-content: center;
     padding-top: 3%;
@@ -1551,10 +1558,11 @@ footer p {
 
     .hidden {
         visibility: visible;
-        background-color: white;
+        background-color: transparent;
         color: black;
         padding: 0px;
-        margin-top: -20px;
+        margin-top: -10px;
+        margin-bottom: 0;
         font-size: 10px;
         width: auto;
     }
@@ -1568,6 +1576,14 @@ footer p {
     .skin-type:hover .hidden {
         visibility: visible;
     }
+
+    .owl-dots {
+        display: none;
+    }
+
+    /* .owl-nav {
+        display: none;
+    } */
 
     /* skin page */
 
@@ -1586,30 +1602,20 @@ footer p {
     }
 
     .skin-type {
-        height: 200px;
+        height: 150px;
         font-size: 10px;
-        min-width: 100px;
-        padding-top: 0;
         width: auto;
+        padding-top: 5;
     }
 
     #skin-container {
-        overflow-x: scroll;
+        width: auto;
         flex-wrap: nowrap;
-        flex-direction: row;
+        flex-direction: column;
         margin: 0 5%;
-        padding-top: 30px;
-        justify-content: flex-start;
-        -ms-overflow-style: none;
-        /* Internet Explorer 10+ */
-        scrollbar-width: none;
-        /* Firefox */
     }
 
-    #skin-container::-webkit-scrollbar {
-        display: none;
-        /* Safari and Chrome */
-    }
+
 
     #pale-pink,
     #pale,
@@ -1628,29 +1634,23 @@ footer p {
         padding-top: 0;
     }
 
-    .color-container {
-        overflow-x: scroll;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        padding-top: 30px;
+    #color-container {
         margin: 0 5%;
-        -ms-overflow-style: none;
-        /* Internet Explorer 10+ */
-        scrollbar-width: none;
-        /* Firefox */
-
+        flex-direction: column;
+        width: auto;
+        flex-wrap: nowrap;
+        height: auto;
+        font-family: 'Times New Roman', Times, serif;
     }
 
-    .color-container::-webkit-scrollbar {
-        display: none;
-        /* Safari and Chrome */
-    }
+
 
     .color {
-        min-width: 100px;
+        width: auto;
         border-radius: 25px;
-
+        padding-top: 15px;
+        height: 70px;
+        margin: 10px;
     }
 
     #black-eyes,
@@ -1662,8 +1662,8 @@ footer p {
     #violet-eyes,
     #amethyst-eyes,
     #white-eyes {
-        background-size: 50px 40px;
-        ;
+        background-size: 45px 35px;
+        background-position: 50% 60%;
     }
 
     .gender-container {
@@ -1678,36 +1678,29 @@ footer p {
         padding: 10px;
         width: auto;
         margin: 0px 5% 20px 5%;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        -ms-overflow-style: none;
-        /* Internet Explorer 10+ */
-        scrollbar-width: none;
-        /* Firefox */
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
-    .face-container::-webkit-scrollbar {
-        display: none;
-        /* Safari and Chrome */
-    }
+
 
     .face-container h2 {
         letter-spacing: 2px;
-        width: 50px;
+        width: 100%;
         font-size: 13px;
-        margin: 0px 25px 0 5px;
         font-family: 'Nunito', sans-serif;
+        padding-bottom: 10px;
+        margin-top: 0;
         font-weight: 400;
-        text-align: left;
+        text-align: center;
     }
 
     .face-type {
-        margin: 15px;
-        min-width: 100px;
-        width: 100px;
-        height: 100px;
-        margin-top: 30px;
+        margin: 10px;
+        min-width: 80px;
+        width: 70px;
+        height: 70px;
+        margin-top: 20px;
     }
 
     #prudent-face,
@@ -1730,6 +1723,7 @@ footer p {
     #look-of-wonder {
         box-shadow: none;
         background-color: rgb(231, 231, 231, .6);
+        background-size: 50px 30px;
 
     }
 
@@ -1738,42 +1732,47 @@ footer p {
         padding-top: 0px;
     }
 
+    #black-hair,
+    #blue-hair,
+    #red-hair,
+    #green-hair,
+    #brown-hair,
+    #blonde-hair,
+    #orange-hair,
+    #purple-hair {
+        background-size: 55px 65px;
+        background-position: 50% 100%;
+    }
+
+
     .hair-container {
         background-color: white;
         border: 1px rgb(218, 216, 216) solid;
         padding: 10px;
         width: auto;
         margin: 0px 5% 20px 5%;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        -ms-overflow-style: none;
-        /* Internet Explorer 10+ */
-        scrollbar-width: none;
-        /* Firefox */
-    }
+        justify-content: space-evenly;
+        flex-wrap: wrap;
 
-    .hair-container::-webkit-scrollbar {
-        display: none;
-        /* Safari and Chrome */
     }
 
     .hair-container h2 {
         letter-spacing: 2px;
-        width: 50px;
         font-size: 13px;
-        margin: 0px 25px 0 5px;
+        width: 100%;
         font-family: 'Nunito', sans-serif;
         font-weight: 400;
-        text-align: left;
+        text-align: center;
+        padding-bottom: 10px;
+        margin-top: 0;
     }
 
     .hair-type {
-        margin: 15px;
+        margin: 10px;
         min-width: 100px;
         width: 100px;
-        height: 140px;
-        margin-top: 30px;
+        height: 130px;
+        margin-top: 20px;
     }
 
     #vivacious-wavy,
@@ -1824,27 +1823,23 @@ footer p {
         padding-top: 0px;
     }
 
-    .style-container {
-        padding-top: 30px;
+    #style-container {
         flex-wrap: nowrap;
-        overflow-x: scroll;
-        justify-content: flex-start;
+        flex-direction: column;
         margin: 0 5%;
-        -ms-overflow-style: none;
-        /* Internet Explorer 10+ */
-        scrollbar-width: none;
-        /* Firefox */
+        width: auto;
+        height: auto;
+        font-family: 'Times New Roman', Times, serif;
+        padding-top: 3%;
 
-    }
-
-    .style-container::-webkit-scrollbar {
-        display: none;
-        /* Safari and Chrome */
     }
 
     .style {
         border-radius: 25px;
-        min-width: 100px;
+        width: auto;
+        padding-top: 15px;
+        height: 70px;
+        margin: 10px;
     }
 
     #hat,
@@ -1853,7 +1848,8 @@ footer p {
     #overall,
     #shoe,
     #cape {
-        background-size: 50px 50px;
+        background-size: 45px 45px;
+        background-position: 50%75%;
     }
 
     .outfit-container {
@@ -1862,34 +1858,26 @@ footer p {
         padding: 10px;
         width: auto;
         margin: 0px 5% 20px 5%;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        -ms-overflow-style: none;
-        /* Internet Explorer 10+ */
-        scrollbar-width: none;
-        /* Firefox */
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 
-    .outfit-container::-webkit-scrollbar {
-        display: none;
-        /* Safari and Chrome */
-    }
 
     .outfit-container h2 {
         letter-spacing: 2px;
-        width: 50px;
+        width: 100%;
         font-size: 13px;
-        margin: 0px 25px 0 5px;
         font-family: 'Nunito', sans-serif;
         font-weight: 400;
-        text-align: left;
+        text-align: center;
+        padding-bottom: 10px;
+        margin-top: 0;
     }
 
     .outfit {
         margin: 10px;
         margin-top: 25px;
-        min-width: 100px;
+        width: 70px;
     }
 
     #ducky-hat,
@@ -1930,6 +1918,7 @@ footer p {
     #tiger-tail {
         box-shadow: none;
         background-color: rgb(231, 231, 231, .6);
+        background-size: 50px 50px;
 
     }
 
@@ -1981,6 +1970,50 @@ footer p {
 
     #dress-up button {
         padding: 5px 5px;
+    }
+
+    .outfit {
+        width: 100px;
+    }
+
+    #ducky-hat,
+    #meshcap,
+    #panda-hat,
+    #royal-tiara,
+    #white-beanie,
+    #rabbit-ear,
+    #blue-b-ball-jersey,
+    #green-tie-casual-suit,
+    #heart-tanktop,
+    #preppy-black-vest,
+    #snowman-padded-jacket,
+    #white-outlaw-shirt,
+    #cowgirl-pants,
+    #ice-jeans,
+    #military-cargo-shorts,
+    #plitz-skirt,
+    #ruby-buckled-shorts,
+    #amorian-pink-skirt,
+    #black-cat-costume,
+    #brown-casual-look,
+    #princess-korean-traditional-costume,
+    #wedding-dress,
+    #western-cowboy,
+    #pink-striped-dress,
+    #beige-galoshes,
+    #blue-marble-slippers,
+    #bunny-slippers,
+    #veras-heels,
+    #white-high-top,
+    #slime-slippers,
+    #baby-angel-wings,
+    #christmas-cape,
+    #dracula-cloak,
+    #green-nymph-wing,
+    #sunfire-wings,
+    #tiger-tail {
+        background-size: 55px 55px;
+
     }
 
 }
@@ -2060,6 +2093,14 @@ footer p {
     .caption {
         font-size: 12px;
         padding-bottom: 10px;
+    }
+
+    .hair-type {
+        width: 150px;
+    }
+
+    .outfit {
+        width: 70px;
     }
 
 }
@@ -2163,8 +2204,12 @@ footer p {
         padding-top: 20px;
     }
 
+    .face-type {
+        width: 100px;
+    }
+
     .color {
-        width: 150px;
+        width: 120px;
     }
 
 
@@ -2173,13 +2218,21 @@ footer p {
         padding-top: 20px;
     }
 
+    .hair-type {
+        width: 150px;
+    }
+
     /* outfit page */
     .outfit-page {
         padding-top: 20px;
     }
 
-    .style-container {
+    #style-container {
         justify-content: center;
+    }
+
+    .outfit {
+        width: 95px;
     }
 }
 
@@ -2194,6 +2247,10 @@ footer p {
         flex-direction: row;
         margin: 0 2.5%;
         margin-bottom: 40px;
+    }
+
+    #top-page {
+        padding-bottom: 50px;
     }
 
     .top-page #view-styles {
@@ -2230,8 +2287,6 @@ footer p {
 
     .hidden {
         font-size: 11px;
-        margin-top: -23px;
-        background-color: transparent;
     }
 
     /* skin page */
@@ -2249,16 +2304,12 @@ footer p {
     }
 
     .skin-type {
-        height: 200px;
-        min-width: auto;
-        max-width: 80px;
-        margin-top: 50px;
+        width: auto;
+        height: 180px;
     }
 
     #skin-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 0;
+
         margin: 0 10%;
     }
 
@@ -2279,18 +2330,15 @@ footer p {
         padding-top: 50px;
     }
 
-    .color-container {
-        justify-content: center;
-        flex-wrap: wrap;
+    #color-container {
         margin: 0 10%;
+        height: 160px;
     }
 
     .color {
-        min-width: auto;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
+        width: 110px;
     }
+
 
     #black-eyes,
     #blue-eyes,
@@ -2301,25 +2349,17 @@ footer p {
     #violet-eyes,
     #amethyst-eyes,
     #white-eyes {
-        background-size: 40px 30px;
-        ;
+        background-size: 50px 40px;
     }
 
     .face-container {
-        padding: 25px;
-        padding-top: 60px;
         margin: 0px 10% 20px 10%;
-        justify-content: center;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .face-container h2 {
-        width: auto;
-        font-size: 19px;
-        position: absolute;
-        margin: 0;
-        top: 18px;
-        left: 20px;
+        font-size: 16px;
     }
 
     .face-type {
@@ -2365,29 +2405,25 @@ footer p {
     #orange-hair,
     #purple-hair {
         background-size: 50px 60px;
+        background-position: 50% 80%;
     }
 
     .hair-container {
-        padding: 25px;
-        padding-top: 60px;
+
         margin: 0px 10% 20px 10%;
         justify-content: center;
         flex-wrap: wrap;
-        position: relative;
     }
 
     .hair-container h2 {
-        width: auto;
-        font-size: 19px;
-        position: absolute;
-        margin: 0;
-        top: 18px;
-        left: 20px;
+        font-size: 16px;
+
     }
 
     .hair-type {
         margin: 10px;
         margin-top: 40px;
+        width: 0px;
     }
 
     /* outfit page */
@@ -2395,44 +2431,14 @@ footer p {
         padding-top: 50px;
     }
 
-    .style-container {
+    #style-container {
         justify-content: center;
-        flex-wrap: wrap;
         margin: 0 10%;
-
     }
 
-    .style {
-        border-radius: 50%;
-        min-width: auto;
-        width: 80px;
-        height: 80px;
-    }
 
-    .outfit-container {
-        padding: 25px;
-        padding-top: 60px;
-        margin: 0px 10% 20px 10%;
-        justify-content: center;
-        flex-wrap: wrap;
-        position: relative;
-    }
 
-    .outfit-container h2 {
-        width: auto;
-        font-size: 19px;
-        position: absolute;
-        margin: 0;
-        top: 18px;
-        left: 20px;
-    }
 
-    .outfit {
-        margin: 10px;
-        margin-top: 40px;
-        min-width: auto;
-        width: 100px;
-    }
 
 }
 
@@ -2473,12 +2479,12 @@ footer p {
     }
 
     #skin-container {
-        margin: 0 5%;
+        margin: 0 10%;
         flex-wrap: nowrap;
     }
 
     .skin-type {
-        width: 200px;
+        width: 160px;
         height: 250px;
         max-width: none;
     }
@@ -2498,16 +2504,6 @@ footer p {
 
     #face-page {
         padding-top: 100px;
-    }
-
-    .color-container {
-        flex-wrap: nowrap;
-        margin: 0 5%;
-    }
-
-    .color {
-        width: 90px;
-        height: 90px;
     }
 
     #black-eyes,
@@ -2562,7 +2558,7 @@ footer p {
     #blonde-hair,
     #orange-hair,
     #purple-hair {
-        background-size: 65px 75px;
+        background-size: 50px 60px;
     }
 
     .hair-container {
@@ -2589,9 +2585,9 @@ footer p {
         padding-top: 100px;
     }
 
-    .style-container {
+    #style-container {
         flex-wrap: nowrap;
-        margin: 0 5%;
+        margin: 0 10%;
     }
 
     .style {
@@ -2714,6 +2710,7 @@ footer p {
 
     }
 
+
     /* skin page */
 
 
@@ -2742,13 +2739,37 @@ footer p {
         background-size: 100px 130px;
     }
 
+    .skin-type {
+        width: 180px;
+    }
+
+    .color {
+        width: 150px;
+        height: 90px;
+    }
+
+    #black-eyes,
+    #blue-eyes,
+    #red-eyes,
+    #green-eyes,
+    #hazel-eyes,
+    #sapphire-eyes,
+    #violet-eyes,
+    #amethyst-eyes,
+    #white-eyes {
+        background-size: 60px 50px;
+        ;
+    }
+
     /* face page */
 
     .gender-container {
         margin: 0 10%;
     }
 
-    .face-container h2 {
+    .face-container h2,
+    .hair-container h2,
+    .outfit-container h2 {
 
         font-size: 20px;
 
@@ -2765,6 +2786,17 @@ footer p {
         width: 140px;
         height: 180px;
 
+    }
+
+    #black-hair,
+    #blue-hair,
+    #red-hair,
+    #green-hair,
+    #brown-hair,
+    #blonde-hair,
+    #orange-hair,
+    #purple-hair {
+        background-size: 60px 70px;
     }
 
     #vivacious-wavy,
@@ -2795,16 +2827,26 @@ footer p {
     }
 
     /* outfit page */
+
+    #style-container {
+        margin: 0 10%;
+        height: 160px;
+    }
+
+    .style {
+        width: 150px;
+    }
+
     #outfit-container {
         margin: 0 10%;
     }
 
     .outfit-container {
-        width: 500px;
+        width: 550px;
     }
 
     .outfit {
-        width: 130px;
+        width: 150px;
     }
 
 }
