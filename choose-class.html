@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Page</title>
-    <link rel="icon" type="image/x-icon" href="C:\Users\Angela\PycharmProjects\maplestory_website\public\favicon.ico">
+    <link rel="icon" type="image/x-icon" href="\images\cloud\favicon.ico">
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&family=Pangolin&display=swap"
         rel="stylesheet">
@@ -18,18 +18,50 @@
         <a class="links" id="nav-brand" href="index.html">
             M
         </a>
-        <a class="links" href="index.html#about-page">About</a>
-        <div class="dropdown">
-            <a class="menu-btn" href="index.html#user-guide-page">Guide<i class="arrow down"></i></a>
-            <div class="menu-content">
-                <a class="hidden-link" href="create-character.html">Explore Looks</a>
-                <a class="hidden-link" href="choose-class.html">Explore Classes</a>
-                <a class="hidden-link" href="class_quiz.html">Take a Class Quiz</a>
-            </div>
+        <ul class="nav-items">
+            <li>
+                <a class="links" href="index.html#about-page">About</a>
+            </li>
+            <li id="existing-li">
+                <div class="dropdown">
+                    <a class="menu-btn">Guide<i class="arrow down"></i></a>
+                    <div class="menu-content">
+                        <a class="hidden-link" href="create-character.html">Explore Looks</a>
+                        <a class="hidden-link" href="choose-class.html">Explore Classes</a>
+                        <a class="hidden-link" href="class_quiz.html">Take a Class Quiz</a>
+                    </div>
+                </div>
+            </li>
+            <li class="hiddenLi">
+                <a class="links under" href="index.html#user-guide-page">User Guide</a>
+            </li>
+            <li class="hiddenLi">
+                <a class="links under" href="create-character.html">Explore Looks</a>
+
+            </li>
+            <li class="hiddenLi">
+                <a class="links under" href="choose-class.html">Explore Classes</a>
+
+            </li>
+            <li class="hiddenLi">
+                <a class="links under" href="class_quiz.html">Take a Class Quiz</a>
+
+            </li>
+            <li>
+                <a class="links" href="index.html#community-page">Community</a>
+            </li>
+            <li>
+                <a class="links" href="index.html#contact-page">Contact</a>
+            </li>
+        </ul>
+
+        <div class="hamburger-menu">
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
         </div>
-        <a class="links" href="index.html#community-page">Community</a>
-        <a class="links" href="index.html#contact-page">Contact</a>
     </nav>
+
     <main>
         <section class="top-page" id="top-page">
             <div class="bubble">
@@ -45,28 +77,35 @@
             <div id="jobs-container">
                 <a href="#warrior-page" class="classes" id="warrior">
                     <p>Warrior</p>
-                    <img src="images\class\warrior.png" alt="warrior">
+                    <img src="images\class\warrior.png" class="jobs-img" alt="warrior">
                 </a>
                 <a href="#archer-page" class="classes" id="archer">
                     <p>Archer</p>
-                    <img src="images\class\archer.png" alt="archer">
+                    <img src="images\class\archer.png" class="jobs-img" alt="archer">
                 </a>
                 <a href="#magician-page" class="classes" id="magician">
                     <p>Magician</p>
-                    <img src="images\class\mage.png" alt="mage">
+                    <img src="images\class\mage.png" class="jobs-img" alt="mage">
                 </a>
                 <a href="#thief-page" class="classes" id="thief">
                     <p>Thief</p>
-                    <img src="images\class\thief.png" alt="rouge">
+                    <img src="images\class\thief.png" class="jobs-img" alt="rouge">
                 </a>
+
                 <a href="class_quiz.html" class="classes" id="class-quiz">
-                    <div><img src="images\pig.png" alt="fortune-pig"></div>
-                    <span>Talk to the fortune pig to find which class you are destined for..</span>
+                    <div>
+                        <img id="pig-img" src="images\pig.png" alt="fortune-pig">
+                    </div>
+                    <div>
+                        <span>Talk to the fortune pig to find which class you are destined for..</span>
+                    </div>
                 </a>
             </div>
 
         </section>
-        <section class="warrior-page" id="warrior-page">
+        <div class="divider" id="warrior-page"></div>
+
+        <section class="warrior-page">
             <div class="bubble">
                 <h3>Warrior Class</h3>
             </div>
@@ -147,8 +186,9 @@
             </div>
 
         </section>
+        <div class="divider" id="archer-page"></div>
 
-        <section class="archer-page" id="archer-page">
+        <section class="archer-page">
             <div class="bubble">
                 <h3>Archer Class</h3>
             </div>
@@ -235,8 +275,9 @@
 
         </section>
 
+        <div class="divider" id="magician-page"></div>
 
-        <section class="magician-page" id="magician-page">
+        <section class="magician-page">
             <div class="bubble">
                 <h3>Magician Class</h3>
             </div>
@@ -322,8 +363,9 @@
 
 
         </section>
+        <div class="divider" id="thief-page"></div>
 
-        <section class="thief-page" id="thief-page">
+        <section class="thief-page">
             <div class="bubble">
                 <h3>Thief Class</h3>
             </div>
@@ -400,7 +442,7 @@
                         <li>They can be tricky to play for beginners, since their skills require more precision and
                             timing than other classes.</li>
                         <li>Thieves can struggle against enemies with high health, since their attacks are focused on
-                            dealing burst damage rather than sustained damage.
+                            dealing burst damage.
                         </li>
                     </ul>
                     <img src="images\class\thief1.png" alt="">

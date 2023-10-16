@@ -16,9 +16,9 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(83, 82, 82);
     border-radius: 20px;
-    border: 1px solid rgb(77, 76, 76);
+    border: 1px solid rgb(255, 255, 255);
     height: 2px;
 }
 
@@ -32,9 +32,24 @@ body {
 
 /* default nav bar */
 .navbar {
-    padding-left: 30px;
     position: relative;
     transition: all 1s ease-out;
+    display: flex;
+
+}
+
+.nav-items {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0px;
+    padding-left: 15px;
+}
+
+.nav-items li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* scrolling state nav bar */
@@ -78,6 +93,9 @@ body {
     padding: 3px;
     margin-left: 5px;
     margin-bottom: 3px;
+    position: relative;
+    bottom: 1px;
+    right: -2px;
 }
 
 .down {
@@ -107,13 +125,15 @@ body {
     text-decoration: none;
     color: black;
     font-family: 'Nunito', sans-serif;
+    position: relative;
+
 }
 
 .hidden-link {
     display: block;
     background-color: rgb(255, 255, 255);
     font-size: 15px;
-    width: 130px;
+    width: 100%;
 }
 
 .links {
@@ -124,7 +144,6 @@ body {
 
 .dropdown {
     position: relative;
-    display: inline-block;
 }
 
 .dropdown:hover .menu-content {
@@ -132,20 +151,27 @@ body {
 }
 
 .menu-content {
-    position: absolute;
+    position: relative;
     display: none;
-    z-index: 1;
+    z-index: 99;
     border: 1px solid #cac9c9;
 
 }
 
-.hidden-link {
-    display: inline-block;
-    width: 100%;
-    font-size: 15px;
-    width: 130px;
-
+.hamburger-menu {
+    display: none;
 }
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 6px auto;
+    background-color: rgb(70, 69, 69);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
 
 *::selection {
     background-color: rgb(155, 198, 202);
@@ -348,4 +374,319 @@ footer p {
     margin: 0 auto;
     color: white;
 
+}
+
+@media (min-width: 320px) {
+
+    /* nav bar */
+    .navbar {
+        justify-content: space-between;
+        z-index: 99;
+    }
+
+    .navbar.clicked {
+        background-color: #ffffff;
+        transition: none;
+
+    }
+
+    .navbar.fixed-top {
+        width: 100%;
+        height: 60px;
+    }
+
+    #nav-brand {
+        padding: 25px 0 0 35px;
+    }
+
+    .nav-items {
+        position: fixed;
+        left: -200%;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-items.clicked {
+        left: 0;
+        background-color: #ffffff;
+        top: 57px;
+        z-index: 1;
+        box-shadow: 0px 13px 10px -10px rgb(153, 153, 153);
+
+    }
+
+    .nav-items li {
+        height: 40px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        padding: 40px 35px 0 0;
+    }
+
+    .links,
+    .hidden-link {
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.815);
+        padding: 0;
+    }
+
+
+    .menu-btn {
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.815);
+        padding: 0;
+    }
+
+    .dropdown:hover .menu-content {
+        display: none;
+    }
+
+    .hiddenLi {
+        flex: 0;
+    }
+
+    .under {
+        display: none;
+    }
+
+    .under-guide {
+        flex: auto;
+    }
+
+    .hidden {
+        display: block;
+        font-size: 11px;
+    }
+
+    /* main page */
+    .bubble {
+        margin-left: 7%;
+    }
+
+    .bubble h2 {
+        font-size: 35px;
+
+    }
+
+    .caption {
+        text-align: left;
+        font-size: 13px;
+        margin: 3% 5% 3% 7%;
+    }
+
+    #quiz img {
+        transform: scale(.5);
+        right: -15px;
+        top: -155px;
+    }
+
+    #class-quiz div {
+        display: flex;
+        margin: 10px 0;
+    }
+
+    legend {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+    fieldset {
+        margin: 0;
+    }
+
+
+    fieldset label {
+        font-size: 12px;
+        flex: 1;
+        bottom: initial;
+    }
+
+    fieldset input {
+        height: 15px;
+        width: 15px;
+        margin-right: 10px;
+    }
+
+    form p {
+        font-size: 15px;
+        display: flex;
+    }
+
+    form button {
+        font-size: 15px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+
+    #result-content {
+        margin: 15% auto;
+        padding: 25px;
+        padding-top: 35px;
+        font-size: 15px;
+        width: 75%;
+        height: 140px;
+        justify-content: space-evenly;
+    }
+
+    #result-content span {
+        font-size: 13px;
+    }
+
+}
+
+@media (min-width: 600px) {
+    .caption {
+        font-size: 15px;
+        margin: 2% 5% 3% 7%;
+    }
+
+    #quiz img {
+        transform: scale(.6);
+        top: -165px;
+        right: 25px;
+    }
+}
+
+@media (min-width: 801px) {
+    /* responsive nav bar */
+
+    #nav-brand {
+        padding: 25px 10px 0 45px;
+        font-size: 50px;
+    }
+
+    .nav-items {
+        left: 100px;
+        flex-direction: row;
+        padding-top: 48px;
+    }
+
+
+    .nav-items li {
+        cursor: pointer;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .links,
+    .menu-btn {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+
+    .dropdown:hover .menu-content {
+        display: block;
+    }
+
+    .hidden,
+    .under-guide {
+        display: none;
+        flex: none;
+    }
+
+    .hidden-link {
+        font-size: 15px;
+        display: block;
+        width: 130px;
+        padding: 16px;
+    }
+
+    .menu-content {
+        position: absolute;
+    }
+
+    #quiz img {
+        top: -150px;
+        right: 35px;
+    }
+
+    legend {
+        font-size: 16px;
+    }
+
+    fieldset label {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1025px) {
+    /* main page */
+
+    .bubble h2 {
+        font-size: 45px;
+
+    }
+
+    .caption {
+        font-size: 18px;
+    }
+
+    #quiz img {
+        transform: scale(.8);
+        top: -100px;
+        right: 80px;
+    }
+
+    legend {
+        font-size: 20px;
+    }
+
+    fieldset label {
+        font-size: 15px;
+        bottom: -2px;
+    }
+
+    fieldset input {
+        height: 18px;
+        width: 18px;
+    }
+
+}
+
+@media (min-width: 1500px) {
+
+    /* main page */
+    .bubble {
+        margin-left: 15%;
+    }
+
+    .bubble h2 {
+        font-size: 50px;
+    }
+
+    .caption {
+        font-size: 18px;
+        margin: 1% 0 3% 15%;
+    }
+
+    #quiz img {
+        transform: scale(.8);
+        right: 255px;
+        top: -90px;
+    }
+
+    form {
+        margin: 0 15%;
+    }
+
+    legend {
+        font-size: 22px;
+    }
+
+    fieldset label {
+        font-size: 17px;
+        bottom: 0;
+    }
+
+    form button {
+        font-size: 17px;
+    }
 }
