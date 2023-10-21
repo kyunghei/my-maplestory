@@ -2268,6 +2268,8 @@ footer p {
 
     .menu-content {
         position: absolute;
+        top: 37px;
+
     }
 
     /* about page */

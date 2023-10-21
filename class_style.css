@@ -1078,6 +1078,8 @@ footer p {
 
     .menu-content {
         position: absolute;
+        top: 37px;
+
     }
 
     #class-quiz span {

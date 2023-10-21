@@ -213,11 +213,7 @@ body {
     position: relative;
 }
 
-#quiz img {
-    position: absolute;
-    top: -100px;
-    right: 140px;
-}
+
 
 form {
     font-family: 'Nunito', sans-serif;
@@ -298,8 +294,8 @@ form button:hover {
     background-color: white;
     border-radius: 25px;
     position: relative;
-    background: linear-gradient(rgba(226, 226, 226, 0.546), rgba(241, 241, 241, 0.852), rgba(140, 139, 139, 0.491)), url("images/landing_bg.jpg") no-repeat;
     background-size: cover;
+    background-color: #f0f0f0;
     height: 240px;
     display: flex;
     flex-direction: column;
@@ -477,10 +473,11 @@ footer p {
         margin: 3% 5% 3% 7%;
     }
 
-    #quiz img {
-        transform: scale(.5);
-        right: -15px;
-        top: -155px;
+    #fortune-pig {
+        position: absolute;
+        transform: scale(.4);
+        right: -10px;
+        top: -145px;
     }
 
     #class-quiz div {
@@ -523,32 +520,83 @@ footer p {
         font-size: 11px;
     }
 
+    #classResult {
+        padding-top: 15px;
+        margin-bottom: 0;
+    }
+
     #result-content {
-        margin: 15% auto;
-        padding: 25px;
-        padding-top: 35px;
-        font-size: 15px;
+        margin: 45% auto;
+        padding: 30px 20px 0 20px;
+        font-size: 16px;
         width: 75%;
-        height: 140px;
-        justify-content: space-evenly;
+        height: 200px;
     }
 
     #result-content span {
         font-size: 13px;
+        width: 77%;
+        padding-top: 25px;
+        line-height: 30px;
+    }
+
+    #result-content img {
+        position: absolute;
+        opacity: 1;
+        transform: scale(1.2);
+        top: 110px;
+        right: 25px;
     }
 
 }
 
+@media (min-width: 440px) {
+    #result-content {
+        font-size: 18px;
+    }
+
+    #result-content img {
+        right: 35px;
+        top: 120px;
+    }
+
+    #result-content span {
+        font-size: 15px;
+        padding: 25px 0 0 20px;
+        width: 76%;
+    }
+
+    #fortune-pig {
+        transform: scale(.40);
+        right: 10px;
+    }
+}
+
 @media (min-width: 600px) {
     .caption {
-        font-size: 15px;
+        font-size: 16px;
         margin: 2% 5% 3% 7%;
     }
 
-    #quiz img {
-        transform: scale(.6);
-        top: -165px;
-        right: 25px;
+    #fortune-pig {
+        right: -5px;
+        top: -160px;
+    }
+
+    #result-content {
+        font-size: 19px;
+        margin: 33% auto;
+    }
+
+    #result-content img {
+        right: 30px;
+        top: 135px;
+    }
+
+    #result-content span {
+        font-size: 16px;
+        padding: 5px 0 0 25px;
+        width: 90%;
     }
 }
 
@@ -601,11 +649,15 @@ footer p {
 
     .menu-content {
         position: absolute;
+        top: 37px;
+
     }
 
-    #quiz img {
-        top: -150px;
-        right: 35px;
+
+    #fortune-pig {
+        transform: scale(.6);
+        right: 25px;
+        top: -155px;
     }
 
     legend {
@@ -614,6 +666,25 @@ footer p {
 
     fieldset label {
         font-size: 12px;
+    }
+
+    #result-content {
+        font-size: 20px;
+        padding: 30px 45px 0 45px;
+        width: 60%;
+        margin: 25% auto;
+    }
+
+    #result-content img {
+        right: 15px;
+        top: 130px;
+    }
+
+    #result-content span {
+        font-size: 16px;
+        padding: 15px 15px 0 15px;
+        padding-top: 15px;
+        width: auto;
     }
 }
 
@@ -629,11 +700,6 @@ footer p {
         font-size: 18px;
     }
 
-    #quiz img {
-        transform: scale(.8);
-        top: -100px;
-        right: 80px;
-    }
 
     legend {
         font-size: 20px;
@@ -649,6 +715,32 @@ footer p {
         width: 18px;
     }
 
+
+    #result-content {
+        font-size: 25px;
+        padding: 30px 30px 0 30px;
+        width: 50%;
+        margin: 19% auto;
+    }
+
+    #result-content img {
+        right: 35px;
+        top: 110px;
+        transform: scale(1.4);
+    }
+
+    #result-content span {
+        font-size: 16px;
+        padding: 20px 50px 0px 50px;
+        padding-top: 15px;
+        width: auto;
+    }
+
+    #fortune-pig {
+        transform: scale(.8);
+        right: 60px;
+        top: -145px;
+    }
 }
 
 @media (min-width: 1500px) {
@@ -667,11 +759,6 @@ footer p {
         margin: 1% 0 3% 15%;
     }
 
-    #quiz img {
-        transform: scale(.8);
-        right: 255px;
-        top: -90px;
-    }
 
     form {
         margin: 0 15%;
@@ -688,5 +775,34 @@ footer p {
 
     form button {
         font-size: 17px;
+    }
+
+
+    #result-content {
+        font-size: 35px;
+        padding: 0px 30px 0 30px;
+        width: 40%;
+        margin: 15% auto;
+        height: 250px;
+    }
+
+    #result-content img {
+        right: 50px;
+        top: 125px;
+        transform: scale(1.65);
+    }
+
+    #result-content span {
+        font-size: 19px;
+        padding: 20px 100px 0px 100px;
+        width: auto;
+        line-height: 40px;
+    }
+
+
+    #fortune-pig {
+        transform: scale(1);
+        right: 295px;
+        top: -165px;
     }
 }

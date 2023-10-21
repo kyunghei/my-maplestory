@@ -66,6 +66,8 @@ guideBtn.addEventListener("click", function () {
 
 })
 
+
+
 var biggerScreen = window.matchMedia("(min-width: 801px");
 window.addEventListener("resize", function () {
     if (navMenu.classList.contains('clicked') && biggerScreen.matches) {
@@ -75,3 +77,13 @@ window.addEventListener("resize", function () {
 
     }
 });
+
+const links = document.querySelectorAll(".links");
+
+links.forEach(x => x.addEventListener("click", function () {
+    if (biggerScreen.matches) {
+        return
+    }
+    navMenu.classList.toggle('clicked');
+    navBar.classList.toggle('clicked');
+}));
