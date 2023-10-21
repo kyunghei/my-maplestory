@@ -19,3 +19,9 @@ Use the drag and drop feature to style your future character with a random hair/
 Take a unique quiz to find which class is for you
 
 ![](https://github.com/kyunghei/my-maplestory/blob/main/maplestory_quiz.gif)
+
+
+
+### credits
+Images used in this personal project are from maples.im
+
