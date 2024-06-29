@@ -17,17 +17,17 @@ This project is hosted on Netlify. You can access the live demo without any setu
 ### Random Character Creator
 - Users can drag and drop different looks onto a character.
 - Implemented using jQuery for smooth drag-and-drop functionality.
-  ![](https://github.com/kyunghei/my-maplestory/blob/main/images/maplestory_character.gif)
+  ![](https://github.com/kyunghei/my-maplestory/blob/main/images/README/maplestory_character.gif)
 
 ### Class Type Information
 - Provides detailed information on different class types: Warrior, Mage, Archer, and Thief.
 - Each class type has its own dedicted section highlighting strengths, weaknesses, and stats.
-  ![](https://github.com/kyunghei/my-maplestory/blob/main/images/maplestory_class.gif)
+  ![](https://github.com/kyunghei/my-maplestory/blob/main/images/README/maplestory_class.gif)
 
 ### Class Quiz
 - Users can take a quiz to determine which Maplestory class best fits their personality and playstyle.
 - Interactive and fun way to engage uses with the game lore.
-  ![](https://github.com/kyunghei/my-maplestory/blob/main/images/maplestory_quiz.gif)
+  ![](https://github.com/kyunghei/my-maplestory/blob/main/images/README/maplestory_quiz.gif)
 
 ## Technologies Used
 - HTML
