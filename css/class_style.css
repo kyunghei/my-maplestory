@@ -270,22 +270,22 @@ body {
 }
 
 #magician {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 8%, transparent 35%), linear-gradient(rgba(252, 250, 250, 0.4), rgba(245, 241, 241, 0.4)), url("images/about_bg.png") bottom;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 8%, transparent 35%), linear-gradient(rgba(252, 250, 250, 0.4), rgba(245, 241, 241, 0.4)), url("../images/about_bg.png") bottom;
     background-size: cover;
 }
 
 #archer {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 8%, transparent 35%), linear-gradient(rgba(252, 250, 250, 0.4), rgba(245, 241, 241, 0.4)), url("images/archer_bg.png") bottom;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 8%, transparent 35%), linear-gradient(rgba(252, 250, 250, 0.4), rgba(245, 241, 241, 0.4)), url("../images/archer_bg.png") bottom;
     background-size: cover;
 }
 
 #warrior {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 8%, transparent 35%), linear-gradient(rgba(252, 250, 250, 0.4), rgba(245, 241, 241, 0.4)), url("images/warrior_bg.png") bottom;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 8%, transparent 35%), linear-gradient(rgba(252, 250, 250, 0.4), rgba(245, 241, 241, 0.4)), url("../images/warrior_bg.png") bottom;
     background-size: cover;
 }
 
 #thief {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 8%, transparent 35%), linear-gradient(rgba(252, 250, 250, 0.4), rgba(245, 241, 241, 0.4)), url("images/rogue_bg.png") bottom;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 8%, transparent 35%), linear-gradient(rgba(252, 250, 250, 0.4), rgba(245, 241, 241, 0.4)), url("../images/rogue_bg.png") bottom;
     background-size: cover;
 }
 
@@ -304,7 +304,7 @@ body {
     padding: 100px 0;
     /* height: 1000px; */
     overflow: hidden;
-    background: linear-gradient(rgb(255, 255, 255), rgb(255, 253, 253, .2), rgb(255, 255, 255)), url("images/warrior-class.png") no-repeat 50% 100%;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 253, 253, .2), rgb(255, 255, 255)), url("../images/warrior-class.png") no-repeat 50% 100%;
     background-size: cover;
 }
 
@@ -467,7 +467,7 @@ body {
     padding: 100px 0;
     /* height: 1000px; */
     overflow: hidden;
-    background: linear-gradient(rgb(255, 255, 255), rgb(255, 253, 253, .2), rgb(255, 255, 255)), url("images/archer-class.png") no-repeat 50% 100%;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 253, 253, .2), rgb(255, 255, 255)), url("../images/archer-class.png") no-repeat 50% 100%;
     background-size: cover;
 }
 
@@ -499,7 +499,7 @@ body {
 .magician-page {
     padding: 100px 0;
     overflow: hidden;
-    background: linear-gradient(rgb(255, 255, 255), rgb(255, 253, 253, .2), rgb(255, 255, 255)), url("images/about_bg.png") no-repeat 50% 100%;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 253, 253, .2), rgb(255, 255, 255)), url("../images/about_bg.png") no-repeat 50% 100%;
     background-size: cover;
 }
 
@@ -531,7 +531,7 @@ body {
 .thief-page {
     padding: 100px 0;
     overflow: hidden;
-    background: linear-gradient(rgb(255, 255, 255), rgb(255, 253, 253, .2), rgb(255, 255, 255)), url("images/thief-class.png") no-repeat 50% 100%;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 253, 253, .2), rgb(255, 255, 255)), url("../images/thief-class.png") no-repeat 50% 100%;
     background-size: cover;
 }
 

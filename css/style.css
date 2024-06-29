@@ -28,8 +28,8 @@ html {
 
 body {
     margin: 0;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.973)), url("images/landing_bg.jpg");
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.973)), url("../images/landing_bg.jpg");
+    background-repeat: repeat-x;
     background-size: cover;
     -webkit-animation: slidein 15s;
     animation: slidein 15s;
@@ -327,8 +327,9 @@ body {
 .about-page {
     height: auto;
     overflow: hidden;
-    background: linear-gradient(rgb(255, 255, 255), rgba(245, 241, 241, 0.4), rgb(255, 255, 255)), url("images/about_bg.png") no-repeat bottom;
+    background: linear-gradient(rgb(255, 255, 255), rgba(245, 241, 241, 0.4), rgb(255, 255, 255)), url("../images/about_bg.png") bottom;
     margin: 3% 0;
+
 }
 
 
@@ -374,7 +375,7 @@ body {
 .user-guide-page {
     height: auto;
     overflow: hidden;
-    background: linear-gradient(rgb(255, 255, 255), rgba(245, 241, 241, 0.3), rgb(255, 255, 255)), url("images/userguide_bg.png");
+    background: linear-gradient(rgb(255, 255, 255), rgba(245, 241, 241, 0.3), rgb(255, 255, 255)), url("../images/userguide_bg.png");
     background-size: contain;
     padding-bottom: 150px;
 }
@@ -528,7 +529,7 @@ body {
 .community-page {
     height: auto;
     /* text-align: center; */
-    background: linear-gradient(rgb(255, 255, 255), rgba(245, 241, 241, 0.4), rgb(255, 255, 255)), url("images/community_bg.png");
+    background: linear-gradient(rgb(255, 255, 255), rgba(245, 241, 241, 0.4), rgb(255, 255, 255)), url("../images/community_bg.png");
     background-size: cover;
     padding-top: 50px;
 
@@ -777,35 +778,35 @@ body {
     }
 
     #card1 {
-        background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk1.png")no-repeat 100%100%;
+        background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk1.png")no-repeat 100%100%;
         background-size: 200px 200px;
 
     }
 
     #card2 {
-        background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk2.png")no-repeat 100%100%;
+        background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk2.png")no-repeat 100%100%;
         background-size: 200px 200px;
     }
 
     #card3 {
-        background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk3.png")no-repeat 100%100%;
+        background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk3.png")no-repeat 100%100%;
         background-size: 200px 200px;
 
     }
 
     #card4 {
-        background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk4.png")no-repeat 100%100%;
+        background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk4.png")no-repeat 100%100%;
         background-size: 200px 200px;
     }
 
     #card5 {
-        background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk5.png")no-repeat 100%100%;
+        background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk5.png")no-repeat 100%100%;
         background-size: 200px 200px;
 
     }
 
     #card6 {
-        background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk6.png")no-repeat 100%100%;
+        background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk6.png")no-repeat 100%100%;
         background-size: 200px 200px;
 
     }
@@ -881,7 +882,7 @@ body {
 .contact-us {
     height: auto;
     padding-top: 25px;
-    background: linear-gradient(rgba(255, 253, 253, 1), rgba(255, 253, 253, .4), rgba(255, 253, 253, 1)), url("images/contact_bg.png");
+    background: linear-gradient(rgba(255, 253, 253, 1), rgba(255, 253, 253, .4), rgba(255, 253, 253, 1)), url("../images/contact_bg.png");
     background-size: cover;
 }
 
@@ -1911,35 +1912,35 @@ footer p {
         }
 
         #card1 {
-            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk1.png")no-repeat 100%100%;
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk1.png")no-repeat 100%100%;
             background-size: 200px 200px;
 
         }
 
         #card2 {
-            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk2.png")no-repeat 100%100%;
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk2.png")no-repeat 100%100%;
             background-size: 200px 200px;
         }
 
         #card3 {
-            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk3.png")no-repeat 100%100%;
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk3.png")no-repeat 100%100%;
             background-size: 200px 200px;
 
         }
 
         #card4 {
-            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk4.png")no-repeat 100%100%;
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk4.png")no-repeat 100%100%;
             background-size: 200px 200px;
         }
 
         #card5 {
-            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk5.png")no-repeat 100%100%;
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk5.png")no-repeat 100%100%;
             background-size: 200px 200px;
 
         }
 
         #card6 {
-            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk6.png")no-repeat 100%100%;
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk6.png")no-repeat 100%100%;
             background-size: 200px 200px;
 
         }
@@ -2128,35 +2129,35 @@ footer p {
         }
 
         #card1 {
-            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk1.png")no-repeat 100%100%;
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk1.png")no-repeat 100%100%;
             background-size: 200px 200px;
 
         }
 
         #card2 {
-            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk2.png")no-repeat 100%100%;
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk2.png")no-repeat 100%100%;
             background-size: 200px 200px;
         }
 
         #card3 {
-            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk3.png")no-repeat 100%100%;
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk3.png")no-repeat 100%100%;
             background-size: 200px 200px;
 
         }
 
         #card4 {
-            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk4.png")no-repeat 100%100%;
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk4.png")no-repeat 100%100%;
             background-size: 200px 200px;
         }
 
         #card5 {
-            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk5.png")no-repeat 100%100%;
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk5.png")no-repeat 100%100%;
             background-size: 200px 200px;
 
         }
 
         #card6 {
-            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("images/express-yourself/communitytalk6.png")no-repeat 100%100%;
+            background: linear-gradient(rgb(255, 253, 253, .5), rgb(255, 253, 253, .5)), url("../images/express-yourself/communitytalk6.png")no-repeat 100%100%;
             background-size: 200px 200px;
 
         }

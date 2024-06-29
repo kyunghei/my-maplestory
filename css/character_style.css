@@ -183,7 +183,7 @@ body {
 .top-page {
     height: auto;
     overflow: hidden;
-    background: linear-gradient(rgb(255, 255, 255), rgba(245, 241, 241, 0.3), rgb(255, 255, 255)), url("images/character_bg.png");
+    background: linear-gradient(rgb(255, 255, 255), rgba(245, 241, 241, 0.3), rgb(255, 255, 255)), url("../images/character_bg.png");
     background-size: cover;
     margin: 0;
 }
@@ -402,25 +402,25 @@ body {
 }
 
 #custom-skin {
-    background: url("images/skin/clay.png") no-repeat 50%80%;
+    background: url("../images/skin/clay.png") no-repeat 50%80%;
     background-size: 100px 150px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #custom-face {
-    background: url("images/face/odd_eye.png") no-repeat 50%60%;
+    background: url("../images/face/odd_eye.png") no-repeat 50%60%;
     background-size: 100px 60px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #custom-hair {
-    background: url("images/hair/vivacious_wavy.png") no-repeat 50%60%;
+    background: url("../images/hair/vivacious_wavy.png") no-repeat 50%60%;
     background-size: 100px 130px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #custom-outfit {
-    background: url("images/outfit/overall/wedding_dress.png") no-repeat 50%60%;
+    background: url("../images/outfit/overall/wedding_dress.png") no-repeat 50%60%;
     background-size: 80px 100px;
     background-color: rgb(231, 231, 231, .6);
     margin-bottom: 20px;
@@ -489,49 +489,49 @@ body {
 }
 
 #pale-pink {
-    background: url("images/skin/pale_pink.png") no-repeat 50%50%;
+    background: url("../images/skin/pale_pink.png") no-repeat 50%50%;
     background-size: 120px 150px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #pale {
-    background: url("images/skin/pale.png") no-repeat 50%50%;
+    background: url("../images/skin/pale.png") no-repeat 50%50%;
     background-size: 120px 150px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #light {
-    background: url("images/skin/light.png") no-repeat 50%50%;
+    background: url("../images/skin/light.png") no-repeat 50%50%;
     background-size: 120px 150px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #clay {
-    background: url("images/skin/clay.png") no-repeat 50%50%;
+    background: url("../images/skin/clay.png") no-repeat 50%50%;
     background-size: 120px 150px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #tanned {
-    background: url("images/skin/tanned.png") no-repeat 50%50%;
+    background: url("../images/skin/tanned.png") no-repeat 50%50%;
     background-size: 120px 150px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #dark {
-    background: url("images/skin/dark.png") no-repeat 50%50%;
+    background: url("../images/skin/dark.png") no-repeat 50%50%;
     background-size: 120px 150px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #ashen {
-    background: url("images/skin/ashen.png") no-repeat 50%50%;
+    background: url("../images/skin/ashen.png") no-repeat 50%50%;
     background-size: 120px 150px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #green {
-    background: url("images/skin/green.png") no-repeat 50%50%;
+    background: url("../images/skin/green.png") no-repeat 50%50%;
     background-size: 120px 150px;
     background-color: rgb(231, 231, 231, .6);
 }
@@ -567,55 +567,55 @@ body {
 }
 
 #black-eyes {
-    background: url("images/face/colors/black.png") no-repeat 50%55%;
+    background: url("../images/face/colors/black.png") no-repeat 50%55%;
     background-size: 60px 50px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #blue-eyes {
-    background: url("images/face/colors/blue.png") no-repeat 50%55%;
+    background: url("../images/face/colors/blue.png") no-repeat 50%55%;
     background-size: 60px 50px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #red-eyes {
-    background: url("images/face/colors/red.png") no-repeat 50%55%;
+    background: url("../images/face/colors/red.png") no-repeat 50%55%;
     background-size: 60px 50px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #green-eyes {
-    background: url("images/face/colors/green.png") no-repeat 50%55%;
+    background: url("../images/face/colors/green.png") no-repeat 50%55%;
     background-size: 60px 50px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #hazel-eyes {
-    background: url("images/face/colors/hazel.png") no-repeat 50%55%;
+    background: url("../images/face/colors/hazel.png") no-repeat 50%55%;
     background-size: 60px 50px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #sapphire-eyes {
-    background: url("images/face/colors/sapphire.png") no-repeat 50%55%;
+    background: url("../images/face/colors/sapphire.png") no-repeat 50%55%;
     background-size: 60px 50px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #violet-eyes {
-    background: url("images/face/colors/violet.png") no-repeat 50%55%;
+    background: url("../images/face/colors/violet.png") no-repeat 50%55%;
     background-size: 60px 50px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #amethyst-eyes {
-    background: url("images/face/colors/amethyst.png") no-repeat 50%55%;
+    background: url("../images/face/colors/amethyst.png") no-repeat 50%55%;
     background-size: 60px 50px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #white-eyes {
-    background: url("images/face/colors/white.png") no-repeat 50%55%;
+    background: url("../images/face/colors/white.png") no-repeat 50%55%;
     background-size: 60px 50px;
     background-color: rgb(231, 231, 231, .6);
 }
@@ -678,7 +678,7 @@ body {
 }
 
 #prudent-face {
-    background: url("images/face/prudent_face.png") no-repeat 50%60%;
+    background: url("../images/face/prudent_face.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -687,7 +687,7 @@ body {
 }
 
 #defiant-face {
-    background: url("images/face/defiant_face.png") no-repeat 50%60%;
+    background: url("../images/face/defiant_face.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -696,7 +696,7 @@ body {
 }
 
 #angel-glow {
-    background: url("images/face/angel_glow.png") no-repeat 50%60%;
+    background: url("../images/face/angel_glow.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -705,7 +705,7 @@ body {
 }
 
 #bright-eyes {
-    background: url("images/face/bright_eyes.png") no-repeat 50%60%;
+    background: url("../images/face/bright_eyes.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -714,7 +714,7 @@ body {
 }
 
 #hypnotized-look {
-    background: url("images/face/hypnotized_look.png") no-repeat 50%60%;
+    background: url("../images/face/hypnotized_look.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -723,7 +723,7 @@ body {
 }
 
 #intelligent-face {
-    background: url("images/face/intelligent_face.png") no-repeat 50%60%;
+    background: url("../images/face/intelligent_face.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -732,7 +732,7 @@ body {
 }
 
 #souls-window {
-    background: url("images/face/soul's_window.png") no-repeat 50%60%;
+    background: url("../images/face/soul's_window.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -741,7 +741,7 @@ body {
 }
 
 #strong-stare {
-    background: url("images/face/strong_stare.png") no-repeat 50%60%;
+    background: url("../images/face/strong_stare.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -750,7 +750,7 @@ body {
 }
 
 #timid-face {
-    background: url("images/face/timid_face.png") no-repeat 50%60%;
+    background: url("../images/face/timid_face.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -761,7 +761,7 @@ body {
 
 
 #alert-face {
-    background: url("images/face/male/alert_face.png") no-repeat 50%60%;
+    background: url("../images/face/male/alert_face.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -770,7 +770,7 @@ body {
 }
 
 #android-face {
-    background: url("images/face/male/android_face.png") no-repeat 50%60%;
+    background: url("../images/face/male/android_face.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -779,7 +779,7 @@ body {
 }
 
 #childs-play {
-    background: url("images/face/male/child's_play.png") no-repeat 50%60%;
+    background: url("../images/face/male/child's_play.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -788,7 +788,7 @@ body {
 }
 
 #composed-face {
-    background: url("images/face/male/composed_face.png") no-repeat 50%60%;
+    background: url("../images/face/male/composed_face.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -797,7 +797,7 @@ body {
 }
 
 #confident-face {
-    background: url("images/face/male/confident_face.png") no-repeat 50%60%;
+    background: url("../images/face/male/confident_face.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -806,7 +806,7 @@ body {
 }
 
 #curious-dog {
-    background: url("images/face/male/curious_dog.png") no-repeat 50%60%;
+    background: url("../images/face/male/curious_dog.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -815,7 +815,7 @@ body {
 }
 
 #defiant-face-masc {
-    background: url("images/face/male/defiant_face.png") no-repeat 50%60%;
+    background: url("../images/face/male/defiant_face.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -824,7 +824,7 @@ body {
 }
 
 #dramatic-face {
-    background: url("images/face/male/dramatic_face.png") no-repeat 50%60%;
+    background: url("../images/face/male/dramatic_face.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -833,7 +833,7 @@ body {
 }
 
 #look-of-wonder {
-    background: url("images/face/male/look_of_wonder.png") no-repeat 50%60%;
+    background: url("../images/face/male/look_of_wonder.png") no-repeat 50%60%;
     background-size: 60px 40px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -850,49 +850,49 @@ body {
 }
 
 #black-hair {
-    background: url("images/hair/colors/black.png") no-repeat 50%85%;
+    background: url("../images/hair/colors/black.png") no-repeat 50%85%;
     background-size: 70px 80px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #blue-hair {
-    background: url("images/hair/colors/blue.png") no-repeat 50%85%;
+    background: url("../images/hair/colors/blue.png") no-repeat 50%85%;
     background-size: 70px 80px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #red-hair {
-    background: url("images/hair/colors/red.png") no-repeat 50%85%;
+    background: url("../images/hair/colors/red.png") no-repeat 50%85%;
     background-size: 70px 80px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #green-hair {
-    background: url("images/hair/colors/green.png") no-repeat 50%85%;
+    background: url("../images/hair/colors/green.png") no-repeat 50%85%;
     background-size: 70px 80px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #brown-hair {
-    background: url("images/hair/colors/brown.png") no-repeat 50%85%;
+    background: url("../images/hair/colors/brown.png") no-repeat 50%85%;
     background-size: 70px 80px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #blonde-hair {
-    background: url("images/hair/colors/blonde.png") no-repeat 50%85%;
+    background: url("../images/hair/colors/blonde.png") no-repeat 50%85%;
     background-size: 70px 80px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #orange-hair {
-    background: url("images/hair/colors/orange.png") no-repeat 50%85%;
+    background: url("../images/hair/colors/orange.png") no-repeat 50%85%;
     background-size: 70px 80px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #purple-hair {
-    background: url("images/hair/colors/purple.png") no-repeat 50%85%;
+    background: url("../images/hair/colors/purple.png") no-repeat 50%85%;
     background-size: 70px 80px;
     background-color: rgb(231, 231, 231, .6);
 }
@@ -926,7 +926,7 @@ body {
 }
 
 #vivacious-wavy {
-    background: url("images/hair/vivacious_wavy.png") no-repeat 50%60%;
+    background: url("../images/hair/vivacious_wavy.png") no-repeat 50%60%;
     background-size: 100px 120px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -935,7 +935,7 @@ body {
 }
 
 #angelica {
-    background: url("images/hair/angelica.png") no-repeat 50%60%;
+    background: url("../images/hair/angelica.png") no-repeat 50%60%;
     background-size: 80px 120px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -944,7 +944,7 @@ body {
 }
 
 #short-twin-tails {
-    background: url("images/hair/short_twin_tails.png") no-repeat 50%60%;
+    background: url("../images/hair/short_twin_tails.png") no-repeat 50%60%;
     background-size: 100px 120px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -953,7 +953,7 @@ body {
 }
 
 #princess-warrior {
-    background: url("images/hair/princess_warrior.png") no-repeat 50%60%;
+    background: url("../images/hair/princess_warrior.png") no-repeat 50%60%;
     background-size: 110px 120px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -962,7 +962,7 @@ body {
 }
 
 #sonara {
-    background: url("images/hair/sonara.png") no-repeat 50%60%;
+    background: url("../images/hair/sonara.png") no-repeat 50%60%;
     background-size: 90px 125px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -971,7 +971,7 @@ body {
 }
 
 #curly-stream {
-    background: url("images/hair/curly_stream.png") no-repeat 50%60%;
+    background: url("../images/hair/curly_stream.png") no-repeat 50%60%;
     background-size: 100px 120px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -980,7 +980,7 @@ body {
 }
 
 #fireball {
-    background: url("images/hair/male/fireball.png") no-repeat 50%60%;
+    background: url("../images/hair/male/fireball.png") no-repeat 50%60%;
     background-size: 100px 130px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -989,7 +989,7 @@ body {
 }
 
 #metro {
-    background: url("images/hair/male/metro.png") no-repeat 50%60%;
+    background: url("../images/hair/male/metro.png") no-repeat 50%60%;
     background-size: 100px 120px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -998,7 +998,7 @@ body {
 }
 
 #shaggy-wax {
-    background: url("images/hair/male/shaggy_wax.png") no-repeat 50%60%;
+    background: url("../images/hair/male/shaggy_wax.png") no-repeat 50%60%;
     background-size: 100px 120px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1007,7 +1007,7 @@ body {
 }
 
 #unkempt {
-    background: url("images/hair/male/unkempt.png") no-repeat 50%60%;
+    background: url("../images/hair/male/unkempt.png") no-repeat 50%60%;
     background-size: 100px 120px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1016,7 +1016,7 @@ body {
 }
 
 #vincent {
-    background: url("images/hair/male/vincent.png") no-repeat 50%60%;
+    background: url("../images/hair/male/vincent.png") no-repeat 50%60%;
     background-size: 90px 120px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1025,7 +1025,7 @@ body {
 }
 
 #wind {
-    background: url("images/hair/male/wind.png") no-repeat 50%60%;
+    background: url("../images/hair/male/wind.png") no-repeat 50%60%;
     background-size: 100px 120px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1061,37 +1061,37 @@ body {
 }
 
 #hat {
-    background: url("images/outfit/hat.png") no-repeat 50% 50%;
+    background: url("../images/outfit/hat.png") no-repeat 50% 50%;
     background-size: 65px 55px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #top {
-    background: url("images/outfit/top.png") no-repeat 50% 50%;
+    background: url("../images/outfit/top.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #bottom {
-    background: url("images/outfit/bottom.png") no-repeat 50% 50%;
+    background: url("../images/outfit/bottom.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #overall {
-    background: url("images/outfit/overall.png") no-repeat 50% 50%;
+    background: url("../images/outfit/overall.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #shoe {
-    background: url("images/outfit/shoe.png") no-repeat 50% 50%;
+    background: url("../images/outfit/shoe.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: rgb(231, 231, 231, .6);
 }
 
 #cape {
-    background: url("images/outfit/cape.png") no-repeat 50% 50%;
+    background: url("../images/outfit/cape.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: rgb(231, 231, 231, .6);
 }
@@ -1129,7 +1129,7 @@ body {
 }
 
 #ducky-hat {
-    background: url("images/outfit/hats/ducky_hat.png") no-repeat 50% 50%;
+    background: url("../images/outfit/hats/ducky_hat.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1138,7 +1138,7 @@ body {
 }
 
 #meshcap {
-    background: url("images/outfit/hats/meshcap.png") no-repeat 50% 50%;
+    background: url("../images/outfit/hats/meshcap.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1147,7 +1147,7 @@ body {
 }
 
 #panda-hat {
-    background: url("images/outfit/hats/panda_hat.png") no-repeat 50% 50%;
+    background: url("../images/outfit/hats/panda_hat.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1156,7 +1156,7 @@ body {
 }
 
 #royal-tiara {
-    background: url("images/outfit/hats/royal_tiara.png") no-repeat 50% 50%;
+    background: url("../images/outfit/hats/royal_tiara.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1165,7 +1165,7 @@ body {
 }
 
 #white-beanie {
-    background: url("images/outfit/hats/white_beanie.png") no-repeat 50% 50%;
+    background: url("../images/outfit/hats/white_beanie.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1174,7 +1174,7 @@ body {
 }
 
 #rabbit-ear {
-    background: url("images/outfit/hats/rabbit_ear.png") no-repeat 50% 50%;
+    background: url("../images/outfit/hats/rabbit_ear.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1183,7 +1183,7 @@ body {
 }
 
 #blue-b-ball-jersey {
-    background: url("images/outfit/tops/blue_b-ball_jersey.png") no-repeat 50% 50%;
+    background: url("../images/outfit/tops/blue_b-ball_jersey.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1192,7 +1192,7 @@ body {
 }
 
 #green-tie-casual-suit {
-    background: url("images/outfit/tops/green_tie_casual_suit.png") no-repeat 50% 50%;
+    background: url("../images/outfit/tops/green_tie_casual_suit.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1201,7 +1201,7 @@ body {
 }
 
 #heart-tanktop {
-    background: url("images/outfit/tops/heart_tanktop.png") no-repeat 50% 50%;
+    background: url("../images/outfit/tops/heart_tanktop.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1210,7 +1210,7 @@ body {
 }
 
 #preppy-black-vest {
-    background: url("images/outfit/tops/preppy_black_vest.png") no-repeat 50% 50%;
+    background: url("../images/outfit/tops/preppy_black_vest.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1219,7 +1219,7 @@ body {
 }
 
 #snowman-padded-jacket {
-    background: url("images/outfit/tops/snowman_padded_jacket.png") no-repeat 50% 50%;
+    background: url("../images/outfit/tops/snowman_padded_jacket.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1228,7 +1228,7 @@ body {
 }
 
 #white-outlaw-shirt {
-    background: url("images/outfit/tops/white_outlaw_shirt.png") no-repeat 50% 50%;
+    background: url("../images/outfit/tops/white_outlaw_shirt.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1237,7 +1237,7 @@ body {
 }
 
 #cowgirl-pants {
-    background: url("images/outfit/bottoms/cowgirl_pants.png") no-repeat 50% 50%;
+    background: url("../images/outfit/bottoms/cowgirl_pants.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1246,7 +1246,7 @@ body {
 }
 
 #ice-jeans {
-    background: url("images/outfit/bottoms/ice_jeans.png") no-repeat 50% 50%;
+    background: url("../images/outfit/bottoms/ice_jeans.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1255,7 +1255,7 @@ body {
 }
 
 #military-cargo-shorts {
-    background: url("images/outfit/bottoms/military_cargo_shorts.png") no-repeat 50% 50%;
+    background: url("../images/outfit/bottoms/military_cargo_shorts.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1264,7 +1264,7 @@ body {
 }
 
 #plitz-skirt {
-    background: url("images/outfit/bottoms/plitz_skirt.png") no-repeat 50% 50%;
+    background: url("../images/outfit/bottoms/plitz_skirt.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1273,7 +1273,7 @@ body {
 }
 
 #ruby-buckled-shorts {
-    background: url("images/outfit/bottoms/ruby-buckled_shorts.png") no-repeat 50% 50%;
+    background: url("../images/outfit/bottoms/ruby-buckled_shorts.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1282,7 +1282,7 @@ body {
 }
 
 #amorian-pink-skirt {
-    background: url("images/outfit/bottoms/amorian_pink_skirt.png") no-repeat 50% 50%;
+    background: url("../images/outfit/bottoms/amorian_pink_skirt.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1291,7 +1291,7 @@ body {
 }
 
 #black-cat-costume {
-    background: url("images/outfit/overall/black_cat_costume.png") no-repeat 50% 50%;
+    background: url("../images/outfit/overall/black_cat_costume.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1300,7 +1300,7 @@ body {
 }
 
 #brown-casual-look {
-    background: url("images/outfit/overall/brown_casual_look.png") no-repeat 50% 50%;
+    background: url("../images/outfit/overall/brown_casual_look.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1309,7 +1309,7 @@ body {
 }
 
 #princess-korean-traditional-costume {
-    background: url("images/outfit/overall/princess_korean_traditional_costume.png") no-repeat 50% 50%;
+    background: url("../images/outfit/overall/princess_korean_traditional_costume.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1318,7 +1318,7 @@ body {
 }
 
 #wedding-dress {
-    background: url("images/outfit/overall/wedding_dress.png") no-repeat 50% 50%;
+    background: url("../images/outfit/overall/wedding_dress.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1327,7 +1327,7 @@ body {
 }
 
 #western-cowboy {
-    background: url("images/outfit/overall/western_cowboy.png") no-repeat 50% 50%;
+    background: url("../images/outfit/overall/western_cowboy.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1336,7 +1336,7 @@ body {
 }
 
 #pink-striped-dress {
-    background: url("images/outfit/overall/pink-striped_dress.png") no-repeat 50% 50%;
+    background: url("../images/outfit/overall/pink-striped_dress.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1345,7 +1345,7 @@ body {
 }
 
 #beige-galoshes {
-    background: url("images/outfit/shoes/beige_galoshes.png") no-repeat 50% 50%;
+    background: url("../images/outfit/shoes/beige_galoshes.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1354,7 +1354,7 @@ body {
 }
 
 #blue-marble-slippers {
-    background: url("images/outfit/shoes/blue_marble_slippers.png") no-repeat 50% 50%;
+    background: url("../images/outfit/shoes/blue_marble_slippers.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1363,7 +1363,7 @@ body {
 }
 
 #bunny-slippers {
-    background: url("images/outfit/shoes/bunny_slippers.png") no-repeat 50% 50%;
+    background: url("../images/outfit/shoes/bunny_slippers.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1372,7 +1372,7 @@ body {
 }
 
 #veras-heels {
-    background: url("images/outfit/shoes/veras_heels.png") no-repeat 50% 50%;
+    background: url("../images/outfit/shoes/veras_heels.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1381,7 +1381,7 @@ body {
 }
 
 #white-high-top {
-    background: url("images/outfit/shoes/white_high_top.png") no-repeat 50% 50%;
+    background: url("../images/outfit/shoes/white_high_top.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1390,7 +1390,7 @@ body {
 }
 
 #slime-slippers {
-    background: url("images/outfit/shoes/slime_slippers.png") no-repeat 50% 50%;
+    background: url("../images/outfit/shoes/slime_slippers.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1399,7 +1399,7 @@ body {
 }
 
 #baby-angel-wings {
-    background: url("images/outfit/capes/baby_angel_wings.png") no-repeat 50% 50%;
+    background: url("../images/outfit/capes/baby_angel_wings.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1408,7 +1408,7 @@ body {
 }
 
 #christmas-cape {
-    background: url("images/outfit/capes/christmas_cape.png") no-repeat 50% 50%;
+    background: url("../images/outfit/capes/christmas_cape.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1417,7 +1417,7 @@ body {
 }
 
 #dracula-cloak {
-    background: url("images/outfit/capes/dracula_cloak.png") no-repeat 50% 50%;
+    background: url("../images/outfit/capes/dracula_cloak.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1426,7 +1426,7 @@ body {
 }
 
 #green-nymph-wing {
-    background: url("images/outfit/capes/green_nymph_wing.png") no-repeat 50% 50%;
+    background: url("../images/outfit/capes/green_nymph_wing.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1435,7 +1435,7 @@ body {
 }
 
 #sunfire-wings {
-    background: url("images/outfit/capes/sunfire_wings.png") no-repeat 50% 50%;
+    background: url("../images/outfit/capes/sunfire_wings.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
@@ -1444,7 +1444,7 @@ body {
 }
 
 #tiger-tail {
-    background: url("images/outfit/capes/tiger_tail.png") no-repeat 50% 50%;
+    background: url("../images/outfit/capes/tiger_tail.png") no-repeat 50% 50%;
     background-size: 60px 60px;
     background-color: white;
     -webkit-box-shadow: 6px 10px 20px -3px rgba(0, 0, 0, 0.35);
