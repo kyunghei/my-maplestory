@@ -1,27 +1,40 @@
-# my-maplestory
-mymaplestory is a web application created to introduce users to the popular MMORPG game called Maplestory.
+# MyMaplestory Project
 
-https://mymaplestory.netlify.app/
+## Overview
+MyMapleStory is a static web application that revitalizes interest in a beloved childhood game, MapleStory. The project is built using HTML, CSS, and JavaScript with jQuery for dynamic interactions. The web app features a random character creator with a drag-and-drop interface, detailed class type information, and a quiz to help users determine which class suits them best.
 
-## landing page
-![](https://github.com/kyunghei/my-maplestory/blob/main/maplestory_landing.gif)
+## Table of Contents
+- [Live Demo](#live-demo)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
 
-## create random look
-Use the drag and drop feature to style your future character with a random hair/face/outfit generator.
+## Live Demo
+This project is hosted on Netlify. You can access the live demo without any setup required:
+[MyMaplestory Live](https://mymaplestory.netlify.app/)
 
-![](https://github.com/kyunghei/my-maplestory/blob/main/maplestory_character.gif)
+## Features
 
-## get information on class types
+### Random Character Creator
+- Users can drag and drop different looks onto a character.
+- Implemented using jQuery for smooth drag-and-drop functionality.
+  ![](https://github.com/kyunghei/my-maplestory/blob/main/maplestory_character.gif)
 
-![](https://github.com/kyunghei/my-maplestory/blob/main/maplestory_class.gif)
+### Class Type Information
+- Provides detailed information on different class types: Warrior, Mage, Archer, and Thief.
+- Each class type has its own dedicted section highlighting strengths, weaknesses, and stats.
+  ![](https://github.com/kyunghei/my-maplestory/blob/main/maplestory_class.gif)
 
-## class quiz
-Take a unique quiz to find which class is for you
+### Class Quiz
+- Users can take a quiz to determine which Maplestory class best fits their personality and playstyle.
+- Interactive and fun way to engage uses with the game lore.
+  ![](https://github.com/kyunghei/my-maplestory/blob/main/maplestory_quiz.gif)
 
-![](https://github.com/kyunghei/my-maplestory/blob/main/maplestory_quiz.gif)
-
-
-
-### credits
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- jQuery
+  
+## Credits
 Images used in this personal project are from maples.im
 
